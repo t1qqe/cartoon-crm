@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM канала</title>
+<meta name="theme-color" content="#f7f6f2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c2410c'/%3E%3Cpath d='M8 22V12m6 10V8m6 14v-7m6 7v-11' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  :root {
+    --bg: #f7f6f2; --panel: #ffffff; --fg: #1d1c1a; --muted: #6b6862; --line: #e4e1d9; --track: #eeebe4;
+    --accent: #c2410c; --accent-2: #2563a8; --soft: #f3d9cb; --warn: #b42318;
+    --radius: 12px; --gap: 16px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161513; --panel: #201f1c; --fg: #ecebe6; --muted: #a29f97; --line: #34322d; --track: #2c2a26;
+      --accent: #f07a45; --accent-2: #6aa3e0; --soft: #5a3524; --warn: #f97066; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161513; --panel: #201f1c; --fg: #ecebe6; --muted: #a29f97; --line: #34322d; --track: #2c2a26;
+    --accent: #f07a45; --accent-2: #6aa3e0; --soft: #5a3524; --warn: #f97066; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; display: grid; gap: 20px; }
+  h1 { font: 400 30px/1.2 Georgia, "Times New Roman", serif; margin: 0; }
+  h2 { font-size: 17px; font-weight: 600; margin: 0; }
+  .lead { margin: 6px 0 0; color: var(--muted); max-width: 70ch; }
+  .tiles { display: grid; gap: var(--gap); grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+  .card, .tile { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; min-width: 0; }
+  .tile .lbl { font-size: 13px; color: var(--muted); }
+  .tile .big { font: 400 28px/1.2 Georgia, serif; font-variant-numeric: tabular-nums; margin-top: 4px; }
+  .tile .sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .grid { display: grid; gap: var(--gap); grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+  .note { font-size: 13px; color: var(--muted); margin: 4px 0 14px; }
+  .warn { color: var(--warn); }
+  .scroll { overflow: auto; max-height: 30rem; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 600; padding: 6px 8px; position: sticky; top: 0; background: var(--panel); border-bottom: 1px solid var(--line); white-space: nowrap; }
+  td { padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td.num, th.num { text-align: right; }
+  a { color: var(--accent-2); }
+  .pill { display: inline-block; font-size: 12px; padding: 0 8px; border-radius: 999px; border: 1px solid var(--line); white-space: nowrap; }
+  .pill.ok { border-color: var(--accent); color: var(--accent); }
+  .bars { display: grid; gap: 10px; }
+  .bar-row { display: grid; grid-template-columns: minmax(6rem, 10rem) 1fr 4.5rem; gap: 10px; align-items: center; font-size: 13px; }
+  .bar-row > span:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  .track { position: relative; height: 14px; background: var(--track); border-radius: 7px; overflow: hidden; }
+  .track > div { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 7px; }
+  .legend { display: flex; gap: 16px; font-size: 12px; color: var(--muted); margin-bottom: 10px; flex-wrap: wrap; }
+  .legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -2px; margin-right: 5px; }
+  .meter { height: 14px; background: var(--track); border-radius: 7px; overflow: hidden; margin: 8px 0; }
+  .meter > div { height: 100%; background: var(--accent); border-radius: 7px; }
+  footer { color: var(--muted); font-size: 12px; text-align: center; }
+  @media (max-width: 560px) { .hide-narrow { display: none; } h1 { font-size: 26px; } .bar-row { grid-template-columns: 5.5rem 1fr 3.5rem; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>CRM канала</h1>
+    <p class="lead" id="lead">Загрузка…</p>
+  </header>
+
+  <section class="tiles" aria-label="Главное">
+    <div class="tile"><div class="lbl">Подписчики</div><div class="big" id="t-subs">—</div><div class="sub" id="t-subs-sub">—</div></div>
+    <div class="tile"><div class="lbl">Просмотры всех роликов</div><div class="big" id="t-views">—</div><div class="sub" id="t-views-sub">—</div></div>
+    <div class="tile"><div class="lbl">Прогноз через 30 дней</div><div class="big" id="t-f30">—</div><div class="sub">сумма прогнозов по вышедшим роликам</div></div>
+    <div class="tile"><div class="lbl">Роликов в графике</div><div class="big" id="t-films">—</div><div class="sub" id="t-films-sub">—</div></div>
+  </section>
+
+  <section class="card">
+    <h2>Просмотры и прогноз по роликам</h2>
+    <p class="note" id="stats-note">—</p>
+    <div class="legend"><span><i style="background:var(--accent)"></i>сейчас</span><span><i style="background:var(--soft)"></i>прогноз на 30 дней</span></div>
+    <div class="bars" id="views-bars"></div>
+  </section>
+
+  <section class="card">
+    <h2>Статистика</h2>
+    <p class="note">Досмотр и подписки — из YouTube Analytics (с задержкой 1–2 дня). Точность прогноза растёт с возрастом ролика.</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Ролик</th><th>Тема</th><th>Статус</th><th class="num">Просмотры</th><th class="num hide-narrow">Досмотр</th><th class="num hide-narrow">Лайки</th><th class="num hide-narrow">Подписки</th><th class="num">7 дней</th><th class="num">30 дней</th><th class="hide-narrow">Точность</th></tr></thead>
+        <tbody id="tb-stats"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Какие хуки заходят</h2>
+      <p class="note">Средний прогноз просмотров за 7 дней по типу хука (в скобках — роликов). Агент идей учитывает это, но хуки чередует.</p>
+      <div class="bars" id="hook-bars"></div>
+    </section>
+    <section class="card">
+      <h2>Запасы и лимиты</h2>
+      <p class="note">Два ролика в день: 17:00 и 21:00 МСК.</p>
+      <div class="tiles" style="grid-template-columns: 1fr 1fr">
+        <div><div class="lbl note" style="margin:0">Идей в очереди</div><div class="big" style="font:400 24px Georgia,serif" id="r-ideas">—</div><div class="note" id="r-ideas-sub" style="margin:0">—</div></div>
+        <div><div class="lbl note" style="margin:0">Озвучки хватит на</div><div class="big" style="font:400 24px Georgia,serif" id="r-voice">—</div><div class="note" id="r-voice-sub" style="margin:0">—</div></div>
+      </div>
+      <p class="note" style="margin-top:16px">Квота YouTube API в сутки</p>
+      <div class="meter"><div id="quota"></div></div>
+      <div class="note" id="quota-text">—</div>
+    </section>
+  </div>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Ближайшие выходы</h2>
+      <p class="note">Свободные слоты после последнего ролика и темы из очереди по порядку.</p>
+      <div class="scroll"><table><thead><tr><th>Слот (МСК)</th><th>Тема</th><th class="hide-narrow">Ракурс</th></tr></thead><tbody id="tb-forecast"></tbody></table></div>
+    </section>
+    <section class="card">
+      <h2>Ролики</h2>
+      <p class="note">Все загруженные фильмы со ссылками.</p>
+      <div class="scroll"><table><thead><tr><th>Ролик</th><th>Название</th><th>Выход</th><th>Хук</th></tr></thead><tbody id="tb-films"></tbody></table></div>
+    </section>
+  </div>
+
+  <footer id="foot">Данные обновляются автоматически 4 раза в сутки.</footer>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const num = (n) => (n == null ? '—' : Number(n).toLocaleString('ru-RU'));
+const day = (s) => new Date(s + 'T00:00:00Z').toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', timeZone: 'UTC' });
+const addDays = (s, n) => { const d = new Date(s + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
+const STATUS = { public: 'опубликован', private: 'ещё не вышел', unlisted: 'по ссылке', 'bot-check': 'нет данных', unknown: 'нет данных' };
+const el = (tag, text, cls) => { const e = document.createElement(tag); if (text != null) e.textContent = text; if (cls) e.className = cls; return e; };
+const link = (href, text) => { const a = el('a', text); a.href = href; a.target = '_blank'; a.rel = 'noopener'; return a; };
+const row = (cells) => { const tr = el('tr'); cells.forEach((c) => { const td = el('td', null, c.cls); if (c.node) td.appendChild(c.node); else td.textContent = c.text ?? ''; tr.appendChild(td); }); return tr; };
+
+function bars(box, items, max) {
+  box.textContent = '';
+  items.forEach((it) => {
+    const r = el('div', null, 'bar-row'), t = el('div', null, 'track');
+    if (it.back != null) { const b = el('div'); b.style.width = (100 * it.back / max) + '%'; b.style.background = 'var(--soft)'; t.appendChild(b); }
+    const f = el('div'); f.style.width = (100 * it.value / max) + '%'; f.style.background = 'var(--accent)'; t.appendChild(f);
+    r.append(el('span', it.label), t, el('span', it.text)); box.appendChild(r);
+  });
+}
+
+function render(d) {
+  const { videos, ideas, budget: [b], stats } = d;
+  const withViews = stats.filter((s) => s.views != null);
+  const s0 = stats[0] || {};
+
+  // tiles
+  $('t-subs').textContent = num(s0.subscribers);
+  $('t-subs-sub').textContent = s0.subscribers_30d != null ? 'через 30 дней ≈ ' + num(s0.subscribers_30d) : 'прогноз — после пары дней замеров';
+  const total = withViews.reduce((a, s) => a + s.views, 0), f30 = withViews.reduce((a, s) => a + (s.forecast_30d || s.views), 0);
+  $('t-views').textContent = withViews.length ? num(total) : '—';
+  $('t-views-sub').textContent = withViews.length + ' из ' + stats.length + ' роликов с данными';
+  $('t-f30').textContent = withViews.length ? num(f30) : '—';
+  const last = videos.map((v) => v.publish_date + ' ' + v.slot).sort().slice(-1)[0] || '';
+  $('t-films').textContent = videos.length;
+  $('t-films-sub').textContent = last ? 'последний выйдет ' + day(last.slice(0, 10)) + ' в ' + last.slice(11) : '';
+
+  // note
+  const when = s0.updated ? new Date(s0.updated).toLocaleString('ru-RU', { timeZone: 'Europe/Moscow', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' }) + ' МСК' : '—';
+  const src = s0.source === 'api' ? 'YouTube Analytics' : 'RSS-лента канала';
+  const curve = s0.growth_note === 'по умолчанию' ? 'кривая роста пока стандартная, своя появится через пару дней замеров' : 'кривая роста ' + (s0.growth_note || '');
+  $('stats-note').textContent = 'Обновлено ' + when + ' · источник: ' + src + ' · ' + curve + '.';
+  if (s0.warning) $('stats-note').appendChild(el('div', '⚠ Ключ YouTube Analytics выдан для другого канала, поэтому досмотр и подписки пока не собираются; просмотры берутся из RSS-ленты.', 'warn'));
+
+  // views bars
+  const vb = withViews.slice().sort((a, b2) => (b2.forecast_30d || b2.views) - (a.forecast_30d || a.views));
+  const max = Math.max(1, ...vb.map((s) => s.forecast_30d || s.views));
+  bars($('views-bars'), vb.map((s) => ({ label: s.topic || s.film, value: s.views, back: s.forecast_30d, text: num(s.views) })), max);
+  if (!vb.length) $('views-bars').textContent = 'Просмотры появятся, когда ролики выйдут.';
+
+  // stats table
+  const tb = $('tb-stats'); tb.textContent = '';
+  stats.slice().reverse().forEach((s) => {
+    const st = el('span', STATUS[s.status] || s.status || '—', 'pill' + (s.status === 'public' ? ' ok' : ''));
+    tb.appendChild(row([{ text: s.film }, { text: s.topic }, { node: st }, { text: num(s.views), cls: 'num' },
+      { text: s.avg_view_pct == null ? '—' : s.avg_view_pct + '%', cls: 'num hide-narrow' }, { text: num(s.likes), cls: 'num hide-narrow' },
+      { text: num(s.subs_gained), cls: 'num hide-narrow' }, { text: num(s.forecast_7d), cls: 'num' }, { text: num(s.forecast_30d), cls: 'num' },
+      { text: s.confidence || '—', cls: 'hide-narrow' }]));
+  });
+
+  // hooks
+  const hm = new Map();
+  withViews.forEach((s) => { const k = s.hook || '—'; (hm.get(k) || hm.set(k, []).get(k)).push(s.forecast_7d || s.views); });
+  const hooks = [...hm].map(([hook, a]) => ({ hook, avg: Math.round(a.reduce((x, y) => x + y, 0) / a.length), n: a.length })).sort((a, c) => c.avg - a.avg);
+  bars($('hook-bars'), hooks.map((h) => ({ label: h.hook + ' (' + h.n + ')', value: h.avg, text: num(h.avg) })), Math.max(1, ...hooks.map((h) => h.avg)));
+  if (!hooks.length) $('hook-bars').textContent = 'Появится, когда у вышедших роликов будут просмотры.';
+
+  // runway + quota
+  const perDay = b.films_per_day, voice = b.lumean_balance_lumc != null ? Math.floor(b.lumean_balance_lumc / b.cost_per_film_lumc) : null;
+  $('r-ideas').textContent = ideas.length;
+  $('r-ideas-sub').textContent = 'хватит до ' + day(addDays(b.as_of, Math.ceil(ideas.length / perDay)));
+  $('r-voice').textContent = voice == null ? '—' : voice + ' фильмов';
+  $('r-voice-sub').textContent = voice == null ? '' : 'примерно до ' + day(addDays(b.as_of, Math.floor(voice / perDay)));
+  const used = perDay * b.yt_units_per_upload, share = used / b.yt_quota_units_per_day;
+  $('quota').style.width = (100 * share) + '%';
+  $('quota-text').textContent = num(used) + ' из ' + num(b.yt_quota_units_per_day) + ' единиц в сутки';
+
+  // upcoming slots
+  const fb = $('tb-forecast'); fb.textContent = '';
+  let [dd, slot] = last ? last.split(' ') : [new Date().toISOString().slice(0, 10), '21:00'];
+  ideas.slice(0, 14).forEach((i) => {
+    if (slot === '17:00') slot = '21:00'; else { slot = '17:00'; dd = addDays(dd, 1); }
+    fb.appendChild(row([{ text: day(dd) + ', ' + slot }, { text: i.topic }, { text: i.angle, cls: 'hide-narrow' }]));
+  });
+
+  // films
+  const vt = $('tb-films'); vt.textContent = '';
+  videos.slice().reverse().forEach((v) => vt.appendChild(row([{ text: v.film }, { node: link(v.youtube, v.title) },
+    { text: day(v.publish_date) + ', ' + v.slot }, { node: el('span', v.hook, 'pill') }])));
+
+  $('lead').textContent = 'Анимационные истории о привычных вещах. ' + (withViews.length ? 'Сейчас ' + num(total) + ' просмотров, через 30 дней ожидается ≈ ' + num(f30) + '. ' : '') +
+    'Идей хватит до ' + day(addDays(b.as_of, Math.ceil(ideas.length / perDay))) + '.';
+  $('foot').textContent = 'Данные обновляются автоматически 4 раза в сутки · сборка ' + (d.built ? new Date(d.built).toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' }) + ' МСК' : '');
+}
+
+fetch('data.json?' + Date.now()).then((r) => r.json()).then(render).catch((e) => { $('lead').textContent = 'Не удалось загрузить данные: ' + e.message; });
+</script>
+</body>
+</html>

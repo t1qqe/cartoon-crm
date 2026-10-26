@@ -1,0 +1,318 @@
+{
+ "built": "2026-10-26T13:17:13Z",
+ "videos": [
+  {
+   "film": "video10",
+   "topic": "Tobacco",
+   "title": "Tobacco: Medicine, Money, Warning — One Leaf, Three Labels",
+   "hook": "штампы",
+   "publish_date": "2026-10-22",
+   "slot": "17:00",
+   "youtube": "https://youtu.be/HRCjTeRmAN0",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video10"
+  },
+  {
+   "film": "video11",
+   "topic": "Beer",
+   "title": "Beer: Food, Wages, Science — and a Warning",
+   "hook": "штампы",
+   "publish_date": "2026-10-23",
+   "slot": "17:00",
+   "youtube": "https://youtu.be/sCNclu9TDyY",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video11"
+  },
+  {
+   "film": "video12",
+   "topic": "Milk",
+   "title": "Milk Was Blamed for 8,000 Child Deaths. 15 Seconds of Heat Fixed It",
+   "hook": "шок-факт",
+   "publish_date": "2026-10-24",
+   "slot": "17:00",
+   "youtube": "https://youtu.be/nVPhXrXbK7U",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video12"
+  },
+  {
+   "film": "video13",
+   "topic": "Aluminium",
+   "title": "Aluminium Cost More Than Gold. Now It's Trash in 3 Seconds",
+   "hook": "число",
+   "publish_date": "2026-10-25",
+   "slot": "17:00",
+   "youtube": "https://youtu.be/22r6DRyDS88",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video13"
+  },
+  {
+   "film": "video14",
+   "topic": "Wallpaper",
+   "title": "Did Green Wallpaper Kill Napoleon?",
+   "hook": "загадка",
+   "publish_date": "2026-10-26",
+   "slot": "17:00",
+   "youtube": "https://youtu.be/jHXPZR2HOYY",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video14"
+  },
+  {
+   "film": "video15",
+   "topic": "Margarine",
+   "title": "Why Was Margarine Once Pink by Law?",
+   "hook": "«каждый день, но…»",
+   "publish_date": "2026-10-26",
+   "slot": "21:00",
+   "youtube": "https://youtu.be/IoEk9h3NtAc",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video15"
+  },
+  {
+   "film": "video16",
+   "topic": "Ketchup",
+   "title": "Was Ketchup Always Made of Tomatoes?",
+   "hook": "развенчание мифа",
+   "publish_date": "2026-10-27",
+   "slot": "17:00",
+   "youtube": "https://youtu.be/yC8t_hdZ_ow",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video16"
+  }
+ ],
+ "ideas": [
+  {
+   "rank": 1,
+   "topic": "NUTMEG",
+   "angle": "Treasure, War, Spice"
+  },
+  {
+   "rank": 2,
+   "topic": "MATCHES",
+   "angle": "Fire, Poison, Strike"
+  },
+  {
+   "rank": 3,
+   "topic": "CANNED FOOD",
+   "angle": "Prize, Army, Lead"
+  },
+  {
+   "rank": 4,
+   "topic": "PENCIL",
+   "angle": "Smuggling, Blockade, Desk"
+  },
+  {
+   "rank": 5,
+   "topic": "TOMATO",
+   "angle": "Poison, Sauce, Staple"
+  },
+  {
+   "rank": 6,
+   "topic": "CHEWING GUM",
+   "angle": "Sap, Ration, Ban"
+  },
+  {
+   "rank": 7,
+   "topic": "ICE",
+   "angle": "Luxury, Empire, Comfort"
+  },
+  {
+   "rank": 8,
+   "topic": "BANANA",
+   "angle": "Republic, Clone, Threat"
+  },
+  {
+   "rank": 9,
+   "topic": "MIRROR",
+   "angle": "Magic, Secret, Selfie"
+  },
+  {
+   "rank": 10,
+   "topic": "PEPPER",
+   "angle": "Ransom, Currency, Table"
+  },
+  {
+   "rank": 11,
+   "topic": "FORK",
+   "angle": "Scandal, Status, Habit"
+  },
+  {
+   "rank": 12,
+   "topic": "UMBRELLA",
+   "angle": "Royalty, Mockery, Everyday"
+  },
+  {
+   "rank": 13,
+   "topic": "BREAD",
+   "angle": "Riot, Revolution, Science"
+  },
+  {
+   "rank": 14,
+   "topic": "LIGHTBULB",
+   "angle": "Wonder, Cartel, Ban"
+  },
+  {
+   "rank": 15,
+   "topic": "FLUORIDE",
+   "angle": "Stain, Discovery, Debate"
+  }
+ ],
+ "budget": [
+  {
+   "as_of": "2026-10-26",
+   "lumean_balance_lumc": 8.76,
+   "cost_per_film_lumc": 0.14,
+   "films_per_day": 2,
+   "yt_quota_units_per_day": 10000,
+   "yt_units_per_upload": 1600
+  }
+ ],
+ "stats": [
+  {
+   "film": "video10",
+   "topic": "Tobacco",
+   "hook": "штампы",
+   "publish_date": "2026-10-22",
+   "status": "public",
+   "views": 1302,
+   "likes": 30,
+   "comments": 1,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": 1588,
+   "forecast_30d": 2048,
+   "confidence": "высокая",
+   "age_h": 95.3,
+   "updated": "2026-10-26T13:17:10Z",
+   "source": "public",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": "the analytics token is for channel UC4r-n4l_5VH2W9asU46Xu2A, the films are on UC4RFyaRtrMwiBejbC3usX-A"
+  },
+  {
+   "film": "video11",
+   "topic": "Beer",
+   "hook": "штампы",
+   "publish_date": "2026-10-23",
+   "status": "public",
+   "views": 1059,
+   "likes": 17,
+   "comments": 0,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": 1430,
+   "forecast_30d": 1844,
+   "confidence": "средняя",
+   "age_h": 71.3,
+   "updated": "2026-10-26T13:17:10Z",
+   "source": "public",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": "the analytics token is for channel UC4r-n4l_5VH2W9asU46Xu2A, the films are on UC4RFyaRtrMwiBejbC3usX-A"
+  },
+  {
+   "film": "video12",
+   "topic": "Milk",
+   "hook": "шок-факт",
+   "publish_date": "2026-10-24",
+   "status": "public",
+   "views": 268,
+   "likes": 4,
+   "comments": 0,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": 418,
+   "forecast_30d": 539,
+   "confidence": "средняя",
+   "age_h": 47.3,
+   "updated": "2026-10-26T13:17:10Z",
+   "source": "public",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": "the analytics token is for channel UC4r-n4l_5VH2W9asU46Xu2A, the films are on UC4RFyaRtrMwiBejbC3usX-A"
+  },
+  {
+   "film": "video13",
+   "topic": "Aluminium",
+   "hook": "число",
+   "publish_date": "2026-10-25",
+   "status": "public",
+   "views": 1112,
+   "likes": 50,
+   "comments": 2,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": 2221,
+   "forecast_30d": 2865,
+   "confidence": "низкая",
+   "age_h": 23.3,
+   "updated": "2026-10-26T13:17:10Z",
+   "source": "public",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": "the analytics token is for channel UC4r-n4l_5VH2W9asU46Xu2A, the films are on UC4RFyaRtrMwiBejbC3usX-A"
+  },
+  {
+   "film": "video14",
+   "topic": "Wallpaper",
+   "hook": "загадка",
+   "publish_date": "2026-10-26",
+   "status": "private",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -0.7,
+   "updated": "2026-10-26T13:17:10Z",
+   "source": "public",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": "the analytics token is for channel UC4r-n4l_5VH2W9asU46Xu2A, the films are on UC4RFyaRtrMwiBejbC3usX-A"
+  },
+  {
+   "film": "video15",
+   "topic": "Margarine",
+   "hook": "«каждый день, но…»",
+   "publish_date": "2026-10-26",
+   "status": "private",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -4.7,
+   "updated": "2026-10-26T13:17:10Z",
+   "source": "public",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": "the analytics token is for channel UC4r-n4l_5VH2W9asU46Xu2A, the films are on UC4RFyaRtrMwiBejbC3usX-A"
+  },
+  {
+   "film": "video16",
+   "topic": "Ketchup",
+   "hook": "развенчание мифа",
+   "publish_date": "2026-10-27",
+   "status": "private",
+   "views": null,
+   "likes": null,
+   "comments": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -24.7,
+   "updated": "2026-10-26T13:17:10Z",
+   "source": "public",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": "the analytics token is for channel UC4r-n4l_5VH2W9asU46Xu2A, the films are on UC4RFyaRtrMwiBejbC3usX-A"
+  }
+ ]
+}
