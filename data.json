@@ -1,5 +1,5 @@
 {
- "built": "2026-10-26T16:24:37Z",
+ "built": "2026-10-26T20:37:57Z",
  "videos": [
   {
    "film": "video1",
@@ -165,76 +165,106 @@
  "ideas": [
   {
    "rank": 1,
+   "topic": "PINEAPPLE",
+   "angle": "Status, Rental, Can"
+  },
+  {
+   "rank": 2,
    "topic": "NUTMEG",
    "angle": "Treasure, War, Spice"
   },
   {
-   "rank": 2,
+   "rank": 3,
+   "topic": "ALARM CLOCK",
+   "angle": "Knocker-up, Bell, Snooze"
+  },
+  {
+   "rank": 4,
+   "topic": "BANNED EVERYDAY THINGS",
+   "angle": "ranked"
+  },
+  {
+   "rank": 5,
    "topic": "MATCHES",
    "angle": "Fire, Poison, Strike"
   },
   {
-   "rank": 3,
+   "rank": 6,
+   "topic": "TOILET",
+   "angle": "Stink, Sewer, Flush"
+  },
+  {
+   "rank": 7,
+   "topic": "TULIPS",
+   "angle": "Bulb, Bubble, Myth"
+  },
+  {
+   "rank": 8,
+   "topic": "ACCIDENTAL INVENTIONS",
+   "angle": "ranked"
+  },
+  {
+   "rank": 9,
    "topic": "CANNED FOOD",
    "angle": "Prize, Army, Lead"
   },
   {
-   "rank": 4,
+   "rank": 10,
    "topic": "PENCIL",
    "angle": "Smuggling, Blockade, Desk"
   },
   {
-   "rank": 5,
+   "rank": 11,
    "topic": "TOMATO",
    "angle": "Poison, Sauce, Staple"
   },
   {
-   "rank": 6,
+   "rank": 12,
    "topic": "CHEWING GUM",
    "angle": "Sap, Ration, Ban"
   },
   {
-   "rank": 7,
+   "rank": 13,
    "topic": "ICE",
    "angle": "Luxury, Empire, Comfort"
   },
   {
-   "rank": 8,
+   "rank": 14,
    "topic": "BANANA",
    "angle": "Republic, Clone, Threat"
   },
   {
-   "rank": 9,
+   "rank": 15,
    "topic": "MIRROR",
    "angle": "Magic, Secret, Selfie"
   },
   {
-   "rank": 10,
+   "rank": 16,
    "topic": "PEPPER",
    "angle": "Ransom, Currency, Table"
   },
   {
-   "rank": 11,
+   "rank": 17,
    "topic": "FORK",
    "angle": "Scandal, Status, Habit"
   },
   {
-   "rank": 12,
+   "rank": 18,
    "topic": "UMBRELLA",
    "angle": "Royalty, Mockery, Everyday"
   },
   {
-   "rank": 13,
+   "rank": 19,
    "topic": "BREAD",
    "angle": "Riot, Revolution, Science"
   },
   {
-   "rank": 14,
+   "rank": 20,
    "topic": "LIGHTBULB",
    "angle": "Wonder, Cartel, Ban"
   },
   {
-   "rank": 15,
+   "rank": 21,
    "topic": "FLUORIDE",
    "angle": "Stain, Discovery, Debate"
   }
@@ -269,14 +299,14 @@
    "avg_view_pct": 71.8,
    "subs_gained": 0,
    "forecast_7d": 1261,
-   "forecast_30d": 1458,
+   "forecast_30d": 1614,
    "confidence": "высокая",
-   "age_h": 314.2,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 318.5,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
@@ -384,14 +414,14 @@
    "avg_view_pct": 71.8,
    "subs_gained": 3,
    "forecast_7d": 1532,
-   "forecast_30d": 1796,
+   "forecast_30d": 2008,
    "confidence": "высокая",
-   "age_h": 290.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 294.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
@@ -499,14 +529,14 @@
    "avg_view_pct": 63.2,
    "subs_gained": 10,
    "forecast_7d": 2755,
-   "forecast_30d": 3279,
+   "forecast_30d": 3705,
    "confidence": "высокая",
-   "age_h": 266.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 270.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
@@ -614,14 +644,14 @@
    "avg_view_pct": 55.8,
    "subs_gained": 0,
    "forecast_7d": 1494,
-   "forecast_30d": 1808,
+   "forecast_30d": 2066,
    "confidence": "высокая",
-   "age_h": 242.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 246.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
@@ -729,14 +759,14 @@
    "avg_view_pct": 48,
    "subs_gained": 3,
    "forecast_7d": 1410,
-   "forecast_30d": 1737,
+   "forecast_30d": 2012,
    "confidence": "высокая",
-   "age_h": 218.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 222.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
@@ -844,14 +874,14 @@
    "avg_view_pct": 55.2,
    "subs_gained": 1,
    "forecast_7d": 1356,
-   "forecast_30d": 1705,
+   "forecast_30d": 2002,
    "confidence": "высокая",
-   "age_h": 194.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 198.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
@@ -954,19 +984,19 @@
    "likes": 29,
    "comments": 0,
    "shares": 0,
-   "watch_min": 562,
+   "watch_min": 563,
    "avg_view_sec": 39,
    "avg_view_pct": 65.0,
    "subs_gained": 0,
    "forecast_7d": 1710,
-   "forecast_30d": 2201,
+   "forecast_30d": 2626,
    "confidence": "высокая",
-   "age_h": 170.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 174.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
@@ -1073,15 +1103,15 @@
    "avg_view_sec": 62,
    "avg_view_pct": 77.1,
    "subs_gained": 0,
-   "forecast_7d": 1069,
-   "forecast_30d": 1379,
+   "forecast_7d": 1089,
+   "forecast_30d": 1691,
    "confidence": "высокая",
-   "age_h": 146.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 150.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
@@ -1180,68 +1210,68 @@
    "duration_s": 90,
    "publish_date": "2026-10-21",
    "status": "public",
-   "views": 1452,
+   "views": 1455,
    "likes": 29,
    "comments": 4,
    "shares": 1,
-   "watch_min": 675,
+   "watch_min": 687,
    "avg_view_sec": 45,
    "avg_view_pct": 50.6,
    "subs_gained": 2,
-   "forecast_7d": 1625,
-   "forecast_30d": 2096,
+   "forecast_7d": 1731,
+   "forecast_30d": 2689,
    "confidence": "высокая",
-   "age_h": 121.9,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 126.1,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
      0.01,
-     1.187
+     1.186
     ],
     [
      0.06,
-     1.06
+     1.057
     ],
     [
      0.11,
-     0.806
+     0.807
     ],
     [
      0.16,
-     0.718
+     0.721
     ],
     [
      0.21,
-     0.659
+     0.66
     ],
     [
      0.26,
-     0.619
+     0.618
     ],
     [
      0.31,
-     0.589
+     0.587
     ],
     [
      0.36,
-     0.562
+     0.561
     ],
     [
      0.41,
-     0.529
+     0.528
     ],
     [
      0.46,
-     0.486
+     0.485
     ],
     [
      0.51,
-     0.434
+     0.435
     ],
     [
      0.56,
@@ -1257,23 +1287,23 @@
     ],
     [
      0.71,
-     0.373
+     0.375
     ],
     [
      0.76,
-     0.345
+     0.346
     ],
     [
      0.81,
-     0.332
+     0.333
     ],
     [
      0.86,
-     0.324
+     0.325
     ],
     [
      0.91,
-     0.31
+     0.312
     ],
     [
      0.96,
@@ -1295,108 +1325,108 @@
    "duration_s": 90,
    "publish_date": "2026-10-22",
    "status": "public",
-   "views": 1302,
+   "views": 1303,
    "likes": 30,
    "comments": 1,
    "shares": 0,
-   "watch_min": 505,
-   "avg_view_sec": 40,
-   "avg_view_pct": 45.1,
+   "watch_min": 549,
+   "avg_view_sec": 39,
+   "avg_view_pct": 43.7,
    "subs_gained": 0,
-   "forecast_7d": 1570,
-   "forecast_30d": 2025,
+   "forecast_7d": 1756,
+   "forecast_30d": 2728,
    "confidence": "высокая",
-   "age_h": 98.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 102.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
      0.01,
-     1.146
+     1.134
     ],
     [
      0.06,
-     1.029
+     1.021
     ],
     [
      0.11,
-     0.745
+     0.735
     ],
     [
      0.16,
-     0.605
+     0.595
     ],
     [
      0.21,
-     0.572
+     0.561
     ],
     [
      0.26,
-     0.532
+     0.521
     ],
     [
      0.31,
-     0.506
+     0.492
     ],
     [
      0.36,
-     0.49
+     0.476
     ],
     [
      0.41,
-     0.461
+     0.45
     ],
     [
      0.46,
-     0.425
+     0.411
     ],
     [
      0.51,
-     0.396
-    ],
-    [
-     0.56,
      0.384
     ],
     [
+     0.56,
+     0.369
+    ],
+    [
      0.61,
-     0.362
+     0.35
     ],
     [
      0.66,
-     0.345
+     0.333
     ],
     [
      0.71,
-     0.329
+     0.314
     ],
     [
      0.76,
-     0.308
+     0.297
     ],
     [
      0.81,
-     0.307
+     0.294
     ],
     [
      0.86,
-     0.3
+     0.287
     ],
     [
      0.91,
-     0.285
+     0.272
     ],
     [
      0.96,
-     0.256
+     0.243
     ],
     [
      1,
-     0.164
+     0.152
     ]
    ]
   },
@@ -1410,108 +1440,108 @@
    "duration_s": 89,
    "publish_date": "2026-10-23",
    "status": "public",
-   "views": 1060,
+   "views": 1062,
    "likes": 17,
    "comments": 0,
    "shares": 0,
-   "watch_min": 535,
-   "avg_view_sec": 57,
-   "avg_view_pct": 64.1,
+   "watch_min": 558,
+   "avg_view_sec": 55,
+   "avg_view_pct": 62.6,
    "subs_gained": 1,
-   "forecast_7d": 1410,
-   "forecast_30d": 1818,
+   "forecast_7d": 1682,
+   "forecast_30d": 2613,
    "confidence": "высокая",
-   "age_h": 74.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 78.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": [
     [
      0.01,
-     1.328
+     1.32
     ],
     [
      0.06,
-     1.183
+     1.169
     ],
     [
      0.11,
-     0.899
+     0.887
     ],
     [
      0.16,
-     0.788
+     0.768
     ],
     [
      0.21,
-     0.765
+     0.748
     ],
     [
      0.26,
-     0.694
+     0.675
     ],
     [
      0.31,
-     0.665
+     0.646
     ],
     [
      0.36,
-     0.638
+     0.619
     ],
     [
      0.41,
-     0.612
+     0.596
     ],
     [
      0.46,
-     0.6
+     0.584
     ],
     [
      0.51,
-     0.589
+     0.572
     ],
     [
      0.56,
-     0.587
-    ],
-    [
-     0.61,
      0.569
     ],
     [
+     0.61,
+     0.552
+    ],
+    [
      0.66,
-     0.556
+     0.54
     ],
     [
      0.71,
-     0.536
+     0.521
     ],
     [
      0.76,
-     0.527
-    ],
-    [
-     0.81,
-     0.52
-    ],
-    [
-     0.86,
      0.513
     ],
     [
+     0.81,
+     0.504
+    ],
+    [
+     0.86,
+     0.497
+    ],
+    [
      0.91,
-     0.495
+     0.48
     ],
     [
      0.96,
-     0.456
+     0.445
     ],
     [
      1,
-     0.391
+     0.382
     ]
    ]
   },
@@ -1525,25 +1555,110 @@
    "duration_s": 89,
    "publish_date": "2026-10-24",
    "status": "public",
-   "views": 274,
+   "views": 279,
    "likes": 5,
    "comments": 0,
    "shares": 0,
-   "watch_min": 2,
-   "avg_view_sec": 34,
-   "avg_view_pct": 38.3,
+   "watch_min": 99,
+   "avg_view_sec": 50,
+   "avg_view_pct": 56.6,
    "subs_gained": 0,
-   "forecast_7d": 418,
-   "forecast_30d": 539,
+   "forecast_7d": 551,
+   "forecast_30d": 856,
    "confidence": "средняя",
-   "age_h": 50.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 54.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
-   "retention": null
+   "retention": [
+    [
+     0.01,
+     1.293
+    ],
+    [
+     0.06,
+     1.06
+    ],
+    [
+     0.11,
+     0.879
+    ],
+    [
+     0.16,
+     0.724
+    ],
+    [
+     0.21,
+     0.681
+    ],
+    [
+     0.26,
+     0.621
+    ],
+    [
+     0.31,
+     0.603
+    ],
+    [
+     0.36,
+     0.569
+    ],
+    [
+     0.41,
+     0.569
+    ],
+    [
+     0.46,
+     0.526
+    ],
+    [
+     0.51,
+     0.5
+    ],
+    [
+     0.56,
+     0.5
+    ],
+    [
+     0.61,
+     0.491
+    ],
+    [
+     0.66,
+     0.474
+    ],
+    [
+     0.71,
+     0.457
+    ],
+    [
+     0.76,
+     0.44
+    ],
+    [
+     0.81,
+     0.422
+    ],
+    [
+     0.86,
+     0.414
+    ],
+    [
+     0.91,
+     0.388
+    ],
+    [
+     0.96,
+     0.388
+    ],
+    [
+     1,
+     0.371
+    ]
+   ]
   },
   {
    "film": "video13",
@@ -1555,7 +1670,7 @@
    "duration_s": 90,
    "publish_date": "2026-10-25",
    "status": "public",
-   "views": 1111,
+   "views": 1112,
    "likes": 51,
    "comments": 2,
    "shares": null,
@@ -1563,15 +1678,15 @@
    "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
-   "forecast_7d": 2123,
-   "forecast_30d": 2739,
+   "forecast_7d": 3116,
+   "forecast_30d": 4841,
    "confidence": "средняя",
-   "age_h": 26.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 30.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": null
   },
@@ -1585,23 +1700,23 @@
    "duration_s": 90,
    "publish_date": "2026-10-26",
    "status": "public",
-   "views": 471,
-   "likes": 18,
+   "views": 993,
+   "likes": 25,
    "comments": 0,
    "shares": null,
    "watch_min": null,
    "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
-   "forecast_7d": 2082,
-   "forecast_30d": 2686,
+   "forecast_7d": 7030,
+   "forecast_30d": 10922,
    "confidence": "низкая",
-   "age_h": 2.4,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": 6.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": null
   },
@@ -1610,28 +1725,28 @@
    "topic": "Margarine",
    "hook": "«каждый день, но…»",
    "title": "Why Was Margarine Once Pink by Law?",
-   "thumb": "https://i9.ytimg.com/vi/IoEk9h3NtAc/mqdefault.jpg?sqp=CLD7_dYG&rs=AOn4CLAie6u29-qDkxQkbPo0WltQXLyc-g",
+   "thumb": "https://i.ytimg.com/vi/IoEk9h3NtAc/mqdefault.jpg",
    "youtube": "https://youtu.be/IoEk9h3NtAc",
    "duration_s": 90,
    "publish_date": "2026-10-26",
-   "status": "private",
-   "views": 0,
-   "likes": 0,
+   "status": "public",
+   "views": 835,
+   "likes": 24,
    "comments": 0,
    "shares": null,
    "watch_min": null,
    "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
-   "forecast_7d": null,
-   "forecast_30d": null,
-   "confidence": "—",
-   "age_h": -1.6,
-   "updated": "2026-10-26T16:24:27Z",
+   "forecast_7d": 10369,
+   "forecast_30d": 16108,
+   "confidence": "низкая",
+   "age_h": 2.6,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": null
   },
@@ -1640,7 +1755,7 @@
    "topic": "Ketchup",
    "hook": "развенчание мифа",
    "title": "Was Ketchup Always Made of Tomatoes?",
-   "thumb": "https://i9.ytimg.com/vi/yC8t_hdZ_ow/mqdefault.jpg?sqp=CLD7_dYG&rs=AOn4CLAwofELREsVtPfvjn6VDhwulK_6Fg",
+   "thumb": "https://i9.ytimg.com/vi/yC8t_hdZ_ow/mqdefault.jpg?sqp=CPTy_tYG&rs=AOn4CLAH_Xt07WiYVFEucamSiOJGyNyUVg",
    "youtube": "https://youtu.be/yC8t_hdZ_ow",
    "duration_s": 87,
    "publish_date": "2026-10-27",
@@ -1656,12 +1771,12 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -21.6,
-   "updated": "2026-10-26T16:24:27Z",
+   "age_h": -17.4,
+   "updated": "2026-10-26T20:37:46Z",
    "source": "api",
-   "subscribers": 25,
+   "subscribers": 27,
    "subscribers_30d": null,
-   "growth_note": "по умолчанию",
+   "growth_note": "по 76 замерам",
    "warning": null,
    "retention": null
   }
@@ -1670,9 +1785,9 @@
   "id": "UC4RFyaRtrMwiBejbC3usX-A",
   "title": "Historic Bind",
   "thumb": "https://yt3.ggpht.com/u7dwRu88ApFsvndybToftqSw04gS_z_PMFq_Sazg97RLrrJoAtPaxDHhjKpNZvpJzN0PlhEQsg=s88-c-k-c0x00ffffff-no-rj",
-  "subscribers": 25,
+  "subscribers": 27,
   "views": 17724,
-  "videos": 14,
+  "videos": 15,
   "forecast_30d_subscribers": null
  },
  "daily": [
@@ -1752,20 +1867,27 @@
    610,
    1,
    0
+  ],
+  [
+   "2026-10-24",
+   419,
+   176,
+   0,
+   0
   ]
  ],
  "traffic": [
   [
    "SHORTS",
-   14964
+   15340
   ],
   [
    "YT_SEARCH",
-   593
+   621
   ],
   [
    "YT_OTHER_PAGE",
-   390
+   404
   ],
   [
    "YT_CHANNEL",
@@ -1785,7 +1907,7 @@
   ],
   [
    "NO_LINK_OTHER",
-   1
+   2
   ],
   [
    "PLAYLIST",
@@ -1795,11 +1917,11 @@
  "countries": [
   [
    "US",
-   3202
+   3377
   ],
   [
    "IN",
-   1581
+   1599
   ],
   [
    "GB",
@@ -1823,19 +1945,19 @@
   ],
   [
    "PH",
-   476
+   491
   ],
   [
    "ZA",
    353
   ],
   [
-   "PL",
-   283
+   "ID",
+   303
   ],
   [
-   "ID",
-   281
+   "PL",
+   283
   ],
   [
    "IT",
@@ -1845,19 +1967,19 @@
  "devices": [
   [
    "MOBILE",
-   13418
+   13782
   ],
   [
    "TABLET",
-   1294
+   1316
   ],
   [
    "DESKTOP",
-   960
+   984
   ],
   [
    "TV",
-   364
+   373
   ]
  ],
  "audience": [
@@ -1869,17 +1991,17 @@
   [
    "age18-24",
    "female",
-   1.8
+   1.7
   ],
   [
    "age25-34",
    "female",
-   4.8
+   4.6
   ],
   [
    "age35-44",
    "female",
-   5
+   4.9
   ],
   [
    "age45-54",
@@ -1894,7 +2016,7 @@
   [
    "age13-17",
    "male",
-   11.9
+   12
   ],
   [
    "age18-24",
@@ -1904,17 +2026,17 @@
   [
    "age25-34",
    "male",
-   34.5
+   34.8
   ],
   [
    "age35-44",
    "male",
-   13.9
+   14
   ],
   [
    "age45-54",
    "male",
-   7.1
+   7
   ],
   [
    "age55-64",
@@ -1925,7 +2047,7 @@
  "content_type": [
   [
    "shorts",
-   16071
+   16490
   ]
  ]
 }
