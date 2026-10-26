@@ -92,6 +92,18 @@
   .meter > div { height: 100%; background: var(--accent); border-radius: 7px; }
   .split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .insights { margin: 0; padding-left: 1.1rem; display: grid; gap: 6px; }
+  .prog { display: grid; gap: 6px; margin-bottom: 14px; }
+  .prog .lab { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; flex-wrap: wrap; }
+  .prog .lab b { font-weight: 600; }
+  .prog .lab .muted { color: var(--muted); font-size: 12.5px; }
+  .prog .track { height: 16px; }
+  .prog .mark { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--fg); opacity: .5; }
+  .prog .marks { position: relative; height: 16px; font-size: 11px; color: var(--muted); }
+  .prog .marks span { position: absolute; transform: translateX(-100%); white-space: nowrap; }
+  .scen { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 6px 0 14px; font-size: 13px; }
+  .scen input[type=range] { flex: 1; min-width: 160px; accent-color: var(--accent); }
+  .money-out { display: grid; gap: var(--gap); grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); }
+  .money-out .tile .big { font-size: 22px; }
   footer { color: var(--muted); font-size: 12px; text-align: center; }
   @media (max-width: 560px) { .hide-narrow { display: none; } h1 { font-size: 25px; } .bar-row { grid-template-columns: 6rem 1fr 3.8rem; } header.top img { width: 48px; height: 48px; } .gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
 </style>
@@ -119,6 +131,28 @@
     <h2>Что видно из цифр</h2>
     <p class="note">Выводы пересчитываются автоматически при каждом обновлении.</p>
     <ul class="insights" id="insights"></ul>
+  </section>
+
+  <section class="card" id="money">
+    <h2>Монетизация: когда и сколько</h2>
+    <p class="note">Пороги партнёрской программы YouTube (по обзорам на октябрь 2026; точные условия — в YouTube Studio → «Монетизация»). Shorts-просмотры считаются за последние 90 дней; часы просмотра Shorts в порог 4 000 часов не идут.</p>
+    <div class="prog" id="p-subs"></div>
+    <div class="prog" id="p-views"></div>
+    <div class="scen">
+      <span>Рост просмотров в месяц:</span>
+      <div class="seg" id="g-preset"><button data-g="0" aria-pressed="false">как сейчас</button><button data-g="30" aria-pressed="true">+30%</button><button data-g="100" aria-pressed="false">+100%</button></div>
+      <input type="range" id="g-range" min="0" max="200" step="5" value="30" aria-label="Рост просмотров в месяц, %">
+      <b id="g-val">+30%</b>
+    </div>
+    <div class="money-out">
+      <div class="tile"><div class="lbl">Уровень 1: 500 подписчиков + 3 млн Shorts-просмотров</div><div class="big" id="m-t1">—</div><div class="sub">открывает спонсорство, Super Thanks, магазин — без рекламы</div></div>
+      <div class="tile"><div class="lbl">Уровень 2: 1 000 подписчиков + 10 млн Shorts-просмотров</div><div class="big" id="m-t2">—</div><div class="sub" id="m-t2-sub">доход с рекламы в Shorts; с 1 февраля 2027 для новых каналов — 20 млн</div></div>
+      <div class="tile"><div class="lbl">Если бы монетизация была уже сейчас</div><div class="big" id="m-now">—</div><div class="sub" id="m-now-sub">—</div></div>
+      <div class="tile"><div class="lbl">Доход через 12 месяцев (в месяц)</div><div class="big" id="m-12">—</div><div class="sub" id="m-12-sub">—</div></div>
+    </div>
+    <div class="legend" style="margin-top:16px"><span><i style="background:var(--muted);opacity:.35"></i>просмотры до монетизации</span><span><i style="background:var(--good)"></i>доход, $ в месяц (средняя оценка)</span></div>
+    <div class="chart" id="money-chart"></div>
+    <ul class="insights" id="money-notes" style="margin-top:12px"></ul>
   </section>
 
   <section class="card">
@@ -375,6 +409,81 @@ function drawTable() {
   document.querySelectorAll('#tbl th[data-sort]').forEach((th) => th.classList.toggle('sorted', th.dataset.sort === tSort));
 }
 
+// ---------- monetization ----------
+const RPM = [0.03, 0.05, 0.08];   // $ per 1000 Shorts views (third-party 2026 benchmarks; US audiences pay more)
+const NEW_RULES = '2027-02-01';   // new applicants need 20M Shorts views in 90 days from this date
+let MONEY = null, growth = 30;
+const usd = (x) => x == null ? '—' : '$' + (x >= 100 ? Math.round(x).toLocaleString('ru-RU') : x.toFixed(x < 10 ? 2 : 0).replace('.', ','));
+function progress(box, label, now, marks, fmt) {
+  box.textContent = '';
+  const top = marks[marks.length - 1][0];
+  const lab = el('div', null, 'lab'); const l = el('span'); l.append(label + ': '); l.appendChild(el('b', fmt(now))); lab.append(l, el('span', Math.max(0.1, 100 * now / marks[0][0]).toFixed(now / marks[0][0] < 0.1 ? 1 : 0).replace('.', ',') + '% до первого порога', 'muted'));
+  const t = el('div', null, 'track'); const f = el('div'); f.style.width = Math.max(0.6, Math.min(100, 100 * now / top)) + '%'; f.style.background = 'var(--accent)'; t.appendChild(f);
+  const mk = el('div', null, 'marks');
+  marks.forEach(([v, name]) => { const m = el('div', null, 'mark'); m.style.left = (100 * v / top) + '%'; t.appendChild(m); const sp = el('span', name); sp.style.left = (100 * v / top) + '%'; mk.appendChild(sp); });
+  box.append(lab, t, mk);
+}
+function simulate() {
+  const M = MONEY; if (!M) return;
+  const g = growth / 100, win = M.hist.slice(-90), out = { t1: null, t2: null, months: [] };
+  let subs = M.subs, v90 = win.reduce((a, b) => a + b, 0), date = M.from, month = { views: 0, rev: [0, 0, 0], monetized: false };
+  for (let dd = 1; dd <= 365 * 4; dd++) {
+    date = addDays(date, 1);
+    const v = M.v0 * Math.pow(1 + g, dd / 30);
+    subs += v * M.subRate / 1000;
+    win.push(v); v90 += v; if (win.length > 90) v90 -= win.shift();
+    if (!out.t1 && subs >= 500 && v90 >= 3e6) out.t1 = date;
+    if (!out.t2 && subs >= 1000 && v90 >= (date >= NEW_RULES ? 2e7 : 1e7)) out.t2 = date;
+    month.views += v;
+    if (out.t2) { month.monetized = true; RPM.forEach((r, i) => { month.rev[i] += v * r / 1000; }); }
+    if (dd % 30 === 0) { out.months.push({ end: date, ...month, subs }); month = { views: 0, rev: [0, 0, 0], monetized: false }; }
+  }
+  return out;
+}
+function drawMoney() {
+  const M = MONEY; if (!M) return;
+  $('g-val').textContent = '+' + growth + '%';
+  document.querySelectorAll('#g-preset button').forEach((b) => b.setAttribute('aria-pressed', String(+b.dataset.g === growth)));
+  const r = simulate(), never = 'больше 4 лет';
+  const when = (dt) => dt ? new Date(dt + 'T00:00:00Z').toLocaleDateString('ru-RU', { month: 'long', year: 'numeric', timeZone: 'UTC' }) : never;
+  $('m-t1').textContent = when(r.t1); $('m-t2').textContent = when(r.t2);
+  const monthNow = M.v0 * 30;
+  $('m-now').textContent = usd(monthNow * RPM[0] / 1000) + '–' + usd(monthNow * RPM[2] / 1000);
+  $('m-now-sub').textContent = 'в месяц при ' + short(Math.round(monthNow)) + ' просмотрах в месяц, как сейчас';
+  const m12 = r.months[11];
+  $('m-12').textContent = m12 && m12.monetized ? usd(m12.rev[0]) + '–' + usd(m12.rev[2]) : '$0';
+  $('m-12-sub').textContent = m12 ? short(Math.round(m12.views)) + ' просмотров в месяц' + (m12.monetized ? '' : ' · монетизации ещё нет') : '';
+  // chart: monthly views (bars) and revenue (line) for 24 months
+  const box = $('money-chart'); box.textContent = '';
+  const months = r.months.slice(0, 24), W = 1000, H = 220, L = 52, R = 52, T = 10, B = 26;
+  const vmax = Math.max(1, ...months.map((m) => m.views)), rmax = Math.max(1, ...months.map((m) => m.rev[1]));
+  const bw = (W - L - R) / months.length;
+  const svg = sv('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Прогноз просмотров и дохода по месяцам' });
+  [0, .5, 1].forEach((k) => {
+    const yy = T + (H - T - B) * (1 - k); svg.appendChild(sv('line', { x1: L, x2: W - R, y1: yy, y2: yy, stroke: 'var(--line)' }));
+    const a = sv('text', { x: L - 6, y: yy + 4, 'text-anchor': 'end' }); a.textContent = short(Math.round(vmax * k)); svg.appendChild(a);
+    const b2 = sv('text', { x: W - R + 6, y: yy + 4 }); b2.textContent = usd(rmax * k); svg.appendChild(b2);
+  });
+  const tip = el('div', null, 'tip');
+  months.forEach((m, i) => {
+    const h = (H - T - B) * m.views / vmax, x = L + i * bw;
+    const rect = sv('rect', { x: x + bw * 0.15, y: H - B - h, width: bw * 0.7, height: Math.max(1, h), rx: 2, fill: m.monetized ? 'var(--good)' : 'var(--muted)', opacity: m.monetized ? 0.35 : 0.3 });
+    rect.addEventListener('pointerenter', () => { tip.textContent = when(m.end) + ': ' + short(Math.round(m.views)) + ' просм. · ' + num(Math.round(m.subs)) + ' подп.' + (m.monetized ? ' · ' + usd(m.rev[0]) + '–' + usd(m.rev[2]) : ' · без монетизации'); tip.style.left = ((x + bw / 2) / W * 100) + '%'; tip.style.top = '30px'; tip.style.display = 'block'; });
+    rect.addEventListener('pointerleave', () => { tip.style.display = 'none'; });
+    svg.appendChild(rect);
+    if (i % 3 === 0) { const t = sv('text', { x: x + bw / 2, y: H - 8, 'text-anchor': 'middle' }); t.textContent = new Date(m.end + 'T00:00:00Z').toLocaleDateString('ru-RU', { month: 'short', year: '2-digit', timeZone: 'UTC' }).replace(' г.', ''); svg.appendChild(t); }
+  });
+  const pts = months.map((m, i) => (L + i * bw + bw / 2) + ',' + (T + (H - T - B) * (1 - m.rev[1] / rmax))).join(' ');
+  if (months.some((m) => m.monetized)) svg.appendChild(sv('polyline', { points: pts, fill: 'none', stroke: 'var(--good)', 'stroke-width': 2.5 }));
+  box.append(svg, tip);
+  const notes = $('money-notes'); notes.textContent = '';
+  const need1 = Math.round(3e6 / 90), need2 = Math.round(1e7 / 90);
+  notes.appendChild(el('li', 'Сейчас канал набирает ≈ ' + num(Math.round(M.v0)) + ' просмотров в день. Для уровня 1 нужно в среднем ' + num(need1) + ' в день (в ' + Math.round(need1 / M.v0) + ' раз больше), для уровня 2 — ' + num(need2) + ' (в ' + Math.round(need2 / M.v0) + ' раз больше). Узкое место — просмотры, а не подписчики.'));
+  notes.appendChild(el('li', 'Подписчиков сейчас ≈ ' + M.subRate.toFixed(1).replace('.', ',') + ' на 1 000 просмотров (' + (M.subPerDay).toFixed(1).replace('.', ',') + ' в день).'));
+  notes.appendChild(el('li', 'Доход Shorts — несколько центов с 1 000 просмотров (оценка $0,03–0,08; зрители из США дороже). Деньги приходят из общего пула Shorts и только после уровня 2. Реальная цифра появится в YouTube Studio после подключения.'));
+  notes.appendChild(el('li', 'Прогноз — модель: ' + (growth ? 'просмотры растут на ' + growth + '% каждый месяц' : 'просмотры остаются как сейчас') + ', подписчики приходят с той же частотой, что и сейчас. Один вирусный ролик может сдвинуть сроки на месяцы.'));
+}
+
 function render(d) {
   const { videos, ideas, budget: [b], stats, channel = {} } = d;
   ROWS = stats; DAILY = d.daily || [];
@@ -470,6 +579,19 @@ function render(d) {
 
   drawTable();
 
+  // monetization model input: recent views per day, subscribers per 1000 views
+  if (DAILY.length) {
+    const recent = DAILY.slice(-14), vsum = sum(DAILY, (x) => x[1]), net = sum(DAILY, (x) => x[3] - x[4]);
+    MONEY = { v0: sum(recent, (x) => x[1]) / recent.length, hist: DAILY.map((x) => x[1]), from: DAILY[DAILY.length - 1][0],
+      subs: channel.subscribers ?? s0.subscribers ?? 0, subRate: vsum ? 1000 * net / vsum : 0, subPerDay: net / DAILY.length };
+    progress($('p-subs'), 'Подписчики', MONEY.subs, [[500, '500 · ур. 1'], [1000, '1 000 · ур. 2']], num);
+    const v90 = sum(DAILY.slice(-90), (x) => x[1]);
+    progress($('p-views'), 'Shorts-просмотры за 90 дней', v90, [[3e6, '3 млн'], [1e7, '10 млн'], [2e7, '20 млн с 02.2027']], short);
+    drawMoney();
+  } else {
+    $('money').appendChild(el('div', 'Появится с данными YouTube Analytics.', 'note'));
+  }
+
   // runway + quota + upcoming
   const perDay = b.films_per_day, voice = b.lumean_balance_lumc != null ? Math.floor(b.lumean_balance_lumc / b.cost_per_film_lumc) : null;
   $('r-ideas').textContent = ideas.length;
@@ -500,6 +622,9 @@ document.querySelectorAll('#g-sort button').forEach((btn) => btn.addEventListene
 document.querySelectorAll('#tbl th[data-sort]').forEach((th) => th.addEventListener('click', () => {
   if (tSort === th.dataset.sort) tDir = -tDir; else { tSort = th.dataset.sort; tDir = -1; } drawTable();
 }));
+
+document.querySelectorAll('#g-preset button').forEach((b) => b.addEventListener('click', () => { growth = +b.dataset.g; $('g-range').value = growth; drawMoney(); }));
+$('g-range').addEventListener('input', (e) => { growth = +e.target.value; drawMoney(); });
 
 fetch('data.json?' + Date.now()).then((r) => r.json()).then(render).catch((e) => { $('lead').textContent = 'Не удалось загрузить данные: ' + e.message; });
 </script>
