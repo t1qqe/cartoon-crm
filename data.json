@@ -1,5 +1,5 @@
 {
- "built": "2026-10-26T13:23:41Z",
+ "built": "2026-10-26T13:37:17Z",
  "videos": [
   {
    "film": "video10",
@@ -161,158 +161,1681 @@
  ],
  "stats": [
   {
+   "film": "—",
+   "topic": "The 1700°C secret they didn't want you t",
+   "hook": "—",
+   "title": "The 1700°C secret they didn't want you to know",
+   "thumb": "https://i.ytimg.com/vi/xzQSjKk-kgw/mqdefault.jpg",
+   "youtube": "https://youtu.be/xzQSjKk-kgw",
+   "duration_s": 37,
+   "publish_date": "2026-10-13",
+   "status": "public",
+   "views": 1261,
+   "likes": 22,
+   "comments": 1,
+   "shares": 0,
+   "watch_min": 217,
+   "avg_view_sec": 26,
+   "avg_view_pct": 71.8,
+   "subs_gained": 0,
+   "forecast_7d": 1261,
+   "forecast_30d": 1460,
+   "confidence": "низкая",
+   "age_h": 311.4,
+   "updated": "2026-10-26T13:37:06Z",
+   "source": "api",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.401
+    ],
+    [
+     0.06,
+     1.209
+    ],
+    [
+     0.11,
+     1.146
+    ],
+    [
+     0.16,
+     1.009
+    ],
+    [
+     0.21,
+     0.869
+    ],
+    [
+     0.26,
+     0.834
+    ],
+    [
+     0.31,
+     0.76
+    ],
+    [
+     0.36,
+     0.719
+    ],
+    [
+     0.41,
+     0.673
+    ],
+    [
+     0.46,
+     0.667
+    ],
+    [
+     0.51,
+     0.645
+    ],
+    [
+     0.56,
+     0.632
+    ],
+    [
+     0.61,
+     0.63
+    ],
+    [
+     0.66,
+     0.619
+    ],
+    [
+     0.71,
+     0.606
+    ],
+    [
+     0.76,
+     0.597
+    ],
+    [
+     0.81,
+     0.586
+    ],
+    [
+     0.86,
+     0.58
+    ],
+    [
+     0.91,
+     0.558
+    ],
+    [
+     0.96,
+     0.503
+    ],
+    [
+     1,
+     0.316
+    ]
+   ]
+  },
+  {
+   "film": "video2",
+   "topic": "How Salt Shaped the World",
+   "hook": "—",
+   "title": "This tiny crystal paid Roman salaries and started a revolution",
+   "thumb": "https://i.ytimg.com/vi/2VXzupQs_OY/mqdefault.jpg",
+   "youtube": "https://youtu.be/2VXzupQs_OY",
+   "duration_s": 48,
+   "publish_date": "2026-10-14",
+   "status": "public",
+   "views": 1532,
+   "likes": 33,
+   "comments": 1,
+   "shares": 0,
+   "watch_min": 402,
+   "avg_view_sec": 34,
+   "avg_view_pct": 71.8,
+   "subs_gained": 3,
+   "forecast_7d": 1532,
+   "forecast_30d": 1799,
+   "confidence": "низкая",
+   "age_h": 287.6,
+   "updated": "2026-10-26T13:37:06Z",
+   "source": "api",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.391
+    ],
+    [
+     0.06,
+     1.225
+    ],
+    [
+     0.11,
+     1.163
+    ],
+    [
+     0.16,
+     0.922
+    ],
+    [
+     0.21,
+     0.861
+    ],
+    [
+     0.26,
+     0.836
+    ],
+    [
+     0.31,
+     0.818
+    ],
+    [
+     0.36,
+     0.763
+    ],
+    [
+     0.41,
+     0.738
+    ],
+    [
+     0.46,
+     0.67
+    ],
+    [
+     0.51,
+     0.653
+    ],
+    [
+     0.56,
+     0.625
+    ],
+    [
+     0.61,
+     0.603
+    ],
+    [
+     0.66,
+     0.587
+    ],
+    [
+     0.71,
+     0.57
+    ],
+    [
+     0.76,
+     0.551
+    ],
+    [
+     0.81,
+     0.542
+    ],
+    [
+     0.86,
+     0.533
+    ],
+    [
+     0.91,
+     0.526
+    ],
+    [
+     0.96,
+     0.513
+    ],
+    [
+     1,
+     0.483
+    ]
+   ]
+  },
+  {
+   "film": "video3",
+   "topic": "How Fabric Wove the World",
+   "hook": "—",
+   "title": "How a thread from the Ice Age reached the Moon",
+   "thumb": "https://i.ytimg.com/vi/W2BAPye_vXw/mqdefault.jpg",
+   "youtube": "https://youtu.be/W2BAPye_vXw",
+   "duration_s": 61,
+   "publish_date": "2026-10-15",
+   "status": "public",
+   "views": 2754,
+   "likes": 66,
+   "comments": 1,
+   "shares": 2,
+   "watch_min": 1151,
+   "avg_view_sec": 38,
+   "avg_view_pct": 63.2,
+   "subs_gained": 10,
+   "forecast_7d": 2754,
+   "forecast_30d": 3283,
+   "confidence": "низкая",
+   "age_h": 263.6,
+   "updated": "2026-10-26T13:37:06Z",
+   "source": "api",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.154
+    ],
+    [
+     0.06,
+     1.077
+    ],
+    [
+     0.11,
+     0.949
+    ],
+    [
+     0.16,
+     0.844
+    ],
+    [
+     0.21,
+     0.762
+    ],
+    [
+     0.26,
+     0.715
+    ],
+    [
+     0.31,
+     0.686
+    ],
+    [
+     0.36,
+     0.672
+    ],
+    [
+     0.41,
+     0.643
+    ],
+    [
+     0.46,
+     0.618
+    ],
+    [
+     0.51,
+     0.601
+    ],
+    [
+     0.56,
+     0.58
+    ],
+    [
+     0.61,
+     0.571
+    ],
+    [
+     0.66,
+     0.556
+    ],
+    [
+     0.71,
+     0.535
+    ],
+    [
+     0.76,
+     0.521
+    ],
+    [
+     0.81,
+     0.498
+    ],
+    [
+     0.86,
+     0.476
+    ],
+    [
+     0.91,
+     0.464
+    ],
+    [
+     0.96,
+     0.382
+    ],
+    [
+     1,
+     0.124
+    ]
+   ]
+  },
+  {
+   "film": "video4",
+   "topic": "How Soap Saved the World",
+   "hook": "—",
+   "title": "How Soap Saved the World 🧼 From Babylon to 20 Seconds",
+   "thumb": "https://i.ytimg.com/vi/O4jtyLd4SZk/mqdefault.jpg",
+   "youtube": "https://youtu.be/O4jtyLd4SZk",
+   "duration_s": 61,
+   "publish_date": "2026-10-16",
+   "status": "public",
+   "views": 1494,
+   "likes": 34,
+   "comments": 2,
+   "shares": 2,
+   "watch_min": 421,
+   "avg_view_sec": 34,
+   "avg_view_pct": 55.8,
+   "subs_gained": 0,
+   "forecast_7d": 1494,
+   "forecast_30d": 1811,
+   "confidence": "низкая",
+   "age_h": 239.6,
+   "updated": "2026-10-26T13:37:06Z",
+   "source": "api",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.204
+    ],
+    [
+     0.06,
+     1.147
+    ],
+    [
+     0.11,
+     0.972
+    ],
+    [
+     0.16,
+     0.855
+    ],
+    [
+     0.21,
+     0.691
+    ],
+    [
+     0.26,
+     0.641
+    ],
+    [
+     0.31,
+     0.608
+    ],
+    [
+     0.36,
+     0.582
+    ],
+    [
+     0.41,
+     0.565
+    ],
+    [
+     0.46,
+     0.543
+    ],
+    [
+     0.51,
+     0.519
+    ],
+    [
+     0.56,
+     0.471
+    ],
+    [
+     0.61,
+     0.455
+    ],
+    [
+     0.66,
+     0.452
+    ],
+    [
+     0.71,
+     0.443
+    ],
+    [
+     0.76,
+     0.432
+    ],
+    [
+     0.81,
+     0.418
+    ],
+    [
+     0.86,
+     0.39
+    ],
+    [
+     0.91,
+     0.359
+    ],
+    [
+     0.96,
+     0.259
+    ],
+    [
+     1,
+     0.158
+    ]
+   ]
+  },
+  {
+   "film": "video5",
+   "topic": "How Chocolate Sweetened the World",
+   "hook": "—",
+   "title": "How Chocolate Sweetened the World 🍫 From Bitter Drink to Sweet Gold",
+   "thumb": "https://i.ytimg.com/vi/FnQt1Ky54U4/mqdefault.jpg",
+   "youtube": "https://youtu.be/FnQt1Ky54U4",
+   "duration_s": 61,
+   "publish_date": "2026-10-17",
+   "status": "public",
+   "views": 1410,
+   "likes": 28,
+   "comments": 0,
+   "shares": 0,
+   "watch_min": 390,
+   "avg_view_sec": 29,
+   "avg_view_pct": 48,
+   "subs_gained": 3,
+   "forecast_7d": 1410,
+   "forecast_30d": 1741,
+   "confidence": "низкая",
+   "age_h": 215.6,
+   "updated": "2026-10-26T13:37:06Z",
+   "source": "api",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.175
+    ],
+    [
+     0.06,
+     1.07
+    ],
+    [
+     0.11,
+     0.859
+    ],
+    [
+     0.16,
+     0.68
+    ],
+    [
+     0.21,
+     0.579
+    ],
+    [
+     0.26,
+     0.532
+    ],
+    [
+     0.31,
+     0.49
+    ],
+    [
+     0.36,
+     0.461
+    ],
+    [
+     0.41,
+     0.426
+    ],
+    [
+     0.46,
+     0.415
+    ],
+    [
+     0.51,
+     0.4
+    ],
+    [
+     0.56,
+     0.391
+    ],
+    [
+     0.61,
+     0.391
+    ],
+    [
+     0.66,
+     0.382
+    ],
+    [
+     0.71,
+     0.378
+    ],
+    [
+     0.76,
+     0.365
+    ],
+    [
+     0.81,
+     0.36
+    ],
+    [
+     0.86,
+     0.355
+    ],
+    [
+     0.91,
+     0.343
+    ],
+    [
+     0.96,
+     0.314
+    ],
+    [
+     1,
+     0.141
+    ]
+   ]
+  },
+  {
+   "film": "video6",
+   "topic": "How Sparta Lived Without Walls",
+   "hook": "—",
+   "title": "How Sparta Lived Without Walls 🛡️",
+   "thumb": "https://i.ytimg.com/vi/RoZ3S-zECTo/mqdefault.jpg",
+   "youtube": "https://youtu.be/RoZ3S-zECTo",
+   "duration_s": 61,
+   "publish_date": "2026-10-18",
+   "status": "public",
+   "views": 1356,
+   "likes": 20,
+   "comments": 0,
+   "shares": 0,
+   "watch_min": 346,
+   "avg_view_sec": 33,
+   "avg_view_pct": 55.2,
+   "subs_gained": 1,
+   "forecast_7d": 1356,
+   "forecast_30d": 1709,
+   "confidence": "низкая",
+   "age_h": 191.6,
+   "updated": "2026-10-26T13:37:06Z",
+   "source": "api",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.233
+    ],
+    [
+     0.06,
+     1.082
+    ],
+    [
+     0.11,
+     0.941
+    ],
+    [
+     0.16,
+     0.791
+    ],
+    [
+     0.21,
+     0.703
+    ],
+    [
+     0.26,
+     0.669
+    ],
+    [
+     0.31,
+     0.637
+    ],
+    [
+     0.36,
+     0.615
+    ],
+    [
+     0.41,
+     0.594
+    ],
+    [
+     0.46,
+     0.536
+    ],
+    [
+     0.51,
+     0.509
+    ],
+    [
+     0.56,
+     0.492
+    ],
+    [
+     0.61,
+     0.458
+    ],
+    [
+     0.66,
+     0.423
+    ],
+    [
+     0.71,
+     0.409
+    ],
+    [
+     0.76,
+     0.392
+    ],
+    [
+     0.81,
+     0.379
+    ],
+    [
+     0.86,
+     0.353
+    ],
+    [
+     0.91,
+     0.331
+    ],
+    [
+     0.96,
+     0.314
+    ],
+    [
+     1,
+     0.151
+    ]
+   ]
+  },
+  {
+   "film": "video7",
+   "topic": "How Humans Caught the Sun (clocks & time)",
+   "hook": "—",
+   "title": "How Humans Caught the Sun ⏳ The History of Clocks in 60 Seconds",
+   "thumb": "https://i.ytimg.com/vi/ve4VhPFVbaQ/mqdefault.jpg",
+   "youtube": "https://youtu.be/ve4VhPFVbaQ",
+   "duration_s": 61,
+   "publish_date": "2026-10-19",
+   "status": "public",
+   "views": 1710,
+   "likes": 29,
+   "comments": 0,
+   "shares": 0,
+   "watch_min": 562,
+   "avg_view_sec": 39,
+   "avg_view_pct": 65.0,
+   "subs_gained": 0,
+   "forecast_7d": 1711,
+   "forecast_30d": 2208,
+   "confidence": "низкая",
+   "age_h": 167.6,
+   "updated": "2026-10-26T13:37:06Z",
+   "source": "api",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.28
+    ],
+    [
+     0.06,
+     1.087
+    ],
+    [
+     0.11,
+     0.977
+    ],
+    [
+     0.16,
+     0.909
+    ],
+    [
+     0.21,
+     0.843
+    ],
+    [
+     0.26,
+     0.784
+    ],
+    [
+     0.31,
+     0.755
+    ],
+    [
+     0.36,
+     0.693
+    ],
+    [
+     0.41,
+     0.656
+    ],
+    [
+     0.46,
+     0.626
+    ],
+    [
+     0.51,
+     0.612
+    ],
+    [
+     0.56,
+     0.6
+    ],
+    [
+     0.61,
+     0.586
+    ],
+    [
+     0.66,
+     0.56
+    ],
+    [
+     0.71,
+     0.517
+    ],
+    [
+     0.76,
+     0.501
+    ],
+    [
+     0.81,
+     0.487
+    ],
+    [
+     0.86,
+     0.463
+    ],
+    [
+     0.91,
+     0.43
+    ],
+    [
+     0.96,
+     0.402
+    ],
+    [
+     1,
+     0.21
+    ]
+   ]
+  },
+  {
+   "film": "video8",
+   "topic": "Pigeon Post (the first airmail)",
+   "hook": "—",
+   "title": "The Lost Art of Pigeon Post in 60 Seconds 📜🕊️",
+   "thumb": "https://i.ytimg.com/vi/75pbPUbLc1g/mqdefault.jpg",
+   "youtube": "https://youtu.be/75pbPUbLc1g",
+   "duration_s": 81,
+   "publish_date": "2026-10-20",
+   "status": "public",
+   "views": 1019,
+   "likes": 15,
+   "comments": 0,
+   "shares": 0,
+   "watch_min": 519,
+   "avg_view_sec": 62,
+   "avg_view_pct": 77.1,
+   "subs_gained": 0,
+   "forecast_7d": 1076,
+   "forecast_30d": 1389,
+   "confidence": "низкая",
+   "age_h": 143.6,
+   "updated": "2026-10-26T13:37:06Z",
+   "source": "api",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.521
+    ],
+    [
+     0.06,
+     1.365
+    ],
+    [
+     0.11,
+     1.152
+    ],
+    [
+     0.16,
+     1.033
+    ],
+    [
+     0.21,
+     0.93
+    ],
+    [
+     0.26,
+     0.855
+    ],
+    [
+     0.31,
+     0.838
+    ],
+    [
+     0.36,
+     0.797
+    ],
+    [
+     0.41,
+     0.768
+    ],
+    [
+     0.46,
+     0.728
+    ],
+    [
+     0.51,
+     0.695
+    ],
+    [
+     0.56,
+     0.682
+    ],
+    [
+     0.61,
+     0.662
+    ],
+    [
+     0.66,
+     0.66
+    ],
+    [
+     0.71,
+     0.647
+    ],
+    [
+     0.76,
+     0.627
+    ],
+    [
+     0.81,
+     0.613
+    ],
+    [
+     0.86,
+     0.603
+    ],
+    [
+     0.91,
+     0.592
+    ],
+    [
+     0.96,
+     0.58
+    ],
+    [
+     1,
+     0.195
+    ]
+   ]
+  },
+  {
+   "film": "video9",
+   "topic": "Cannabis",
+   "hook": "—",
+   "title": "What actually happens when you consume THC?",
+   "thumb": "https://i.ytimg.com/vi/MGcd_8ZWrzQ/mqdefault.jpg",
+   "youtube": "https://youtu.be/MGcd_8ZWrzQ",
+   "duration_s": 90,
+   "publish_date": "2026-10-21",
+   "status": "public",
+   "views": 1451,
+   "likes": 29,
+   "comments": 4,
+   "shares": 1,
+   "watch_min": 675,
+   "avg_view_sec": 45,
+   "avg_view_pct": 50.6,
+   "subs_gained": 2,
+   "forecast_7d": 1637,
+   "forecast_30d": 2111,
+   "confidence": "низкая",
+   "age_h": 119.1,
+   "updated": "2026-10-26T13:37:06Z",
+   "source": "api",
+   "subscribers": 23,
+   "subscribers_30d": null,
+   "growth_note": "по умолчанию",
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.187
+    ],
+    [
+     0.06,
+     1.06
+    ],
+    [
+     0.11,
+     0.806
+    ],
+    [
+     0.16,
+     0.718
+    ],
+    [
+     0.21,
+     0.659
+    ],
+    [
+     0.26,
+     0.619
+    ],
+    [
+     0.31,
+     0.589
+    ],
+    [
+     0.36,
+     0.562
+    ],
+    [
+     0.41,
+     0.529
+    ],
+    [
+     0.46,
+     0.486
+    ],
+    [
+     0.51,
+     0.434
+    ],
+    [
+     0.56,
+     0.414
+    ],
+    [
+     0.61,
+     0.402
+    ],
+    [
+     0.66,
+     0.39
+    ],
+    [
+     0.71,
+     0.373
+    ],
+    [
+     0.76,
+     0.345
+    ],
+    [
+     0.81,
+     0.332
+    ],
+    [
+     0.86,
+     0.324
+    ],
+    [
+     0.91,
+     0.31
+    ],
+    [
+     0.96,
+     0.292
+    ],
+    [
+     1,
+     0.149
+    ]
+   ]
+  },
+  {
    "film": "video10",
    "topic": "Tobacco",
    "hook": "штампы",
+   "title": "Why tobacco was once considered a cure",
+   "thumb": "https://i.ytimg.com/vi/HRCjTeRmAN0/mqdefault.jpg",
+   "youtube": "https://youtu.be/HRCjTeRmAN0",
+   "duration_s": 90,
    "publish_date": "2026-10-22",
    "status": "public",
    "views": 1302,
    "likes": 30,
    "comments": 1,
+   "shares": 0,
+   "watch_min": 505,
+   "avg_view_sec": 40,
    "avg_view_pct": 45.1,
    "subs_gained": 0,
-   "forecast_7d": 1587,
-   "forecast_30d": 2048,
+   "forecast_7d": 1586,
+   "forecast_30d": 2046,
    "confidence": "высокая",
-   "age_h": 95.4,
-   "updated": "2026-10-26T13:23:38Z",
+   "age_h": 95.6,
+   "updated": "2026-10-26T13:37:06Z",
    "source": "api",
    "subscribers": 23,
    "subscribers_30d": null,
    "growth_note": "по умолчанию",
-   "warning": null
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.146
+    ],
+    [
+     0.06,
+     1.029
+    ],
+    [
+     0.11,
+     0.745
+    ],
+    [
+     0.16,
+     0.605
+    ],
+    [
+     0.21,
+     0.572
+    ],
+    [
+     0.26,
+     0.532
+    ],
+    [
+     0.31,
+     0.506
+    ],
+    [
+     0.36,
+     0.49
+    ],
+    [
+     0.41,
+     0.461
+    ],
+    [
+     0.46,
+     0.425
+    ],
+    [
+     0.51,
+     0.396
+    ],
+    [
+     0.56,
+     0.384
+    ],
+    [
+     0.61,
+     0.362
+    ],
+    [
+     0.66,
+     0.345
+    ],
+    [
+     0.71,
+     0.329
+    ],
+    [
+     0.76,
+     0.308
+    ],
+    [
+     0.81,
+     0.307
+    ],
+    [
+     0.86,
+     0.3
+    ],
+    [
+     0.91,
+     0.285
+    ],
+    [
+     0.96,
+     0.256
+    ],
+    [
+     1,
+     0.164
+    ]
+   ]
   },
   {
    "film": "video11",
    "topic": "Beer",
    "hook": "штампы",
+   "title": "Beer: Food, Wages, Science — and a Warning",
+   "thumb": "https://i.ytimg.com/vi/sCNclu9TDyY/mqdefault.jpg",
+   "youtube": "https://youtu.be/sCNclu9TDyY",
+   "duration_s": 89,
    "publish_date": "2026-10-23",
    "status": "public",
-   "views": 1059,
+   "views": 1060,
    "likes": 17,
    "comments": 0,
+   "shares": 0,
+   "watch_min": 535,
+   "avg_view_sec": 57,
    "avg_view_pct": 64.1,
    "subs_gained": 1,
    "forecast_7d": 1429,
    "forecast_30d": 1843,
    "confidence": "средняя",
-   "age_h": 71.4,
-   "updated": "2026-10-26T13:23:38Z",
+   "age_h": 71.6,
+   "updated": "2026-10-26T13:37:06Z",
    "source": "api",
    "subscribers": 23,
    "subscribers_30d": null,
    "growth_note": "по умолчанию",
-   "warning": null
+   "warning": null,
+   "retention": [
+    [
+     0.01,
+     1.328
+    ],
+    [
+     0.06,
+     1.183
+    ],
+    [
+     0.11,
+     0.899
+    ],
+    [
+     0.16,
+     0.788
+    ],
+    [
+     0.21,
+     0.765
+    ],
+    [
+     0.26,
+     0.694
+    ],
+    [
+     0.31,
+     0.665
+    ],
+    [
+     0.36,
+     0.638
+    ],
+    [
+     0.41,
+     0.612
+    ],
+    [
+     0.46,
+     0.6
+    ],
+    [
+     0.51,
+     0.589
+    ],
+    [
+     0.56,
+     0.587
+    ],
+    [
+     0.61,
+     0.569
+    ],
+    [
+     0.66,
+     0.556
+    ],
+    [
+     0.71,
+     0.536
+    ],
+    [
+     0.76,
+     0.527
+    ],
+    [
+     0.81,
+     0.52
+    ],
+    [
+     0.86,
+     0.513
+    ],
+    [
+     0.91,
+     0.495
+    ],
+    [
+     0.96,
+     0.456
+    ],
+    [
+     1,
+     0.391
+    ]
+   ]
   },
   {
    "film": "video12",
    "topic": "Milk",
    "hook": "шок-факт",
+   "title": "You Won't Believe What Was in Your Milk 100 Years Ago",
+   "thumb": "https://i.ytimg.com/vi/nVPhXrXbK7U/mqdefault.jpg",
+   "youtube": "https://youtu.be/nVPhXrXbK7U",
+   "duration_s": 89,
    "publish_date": "2026-10-24",
    "status": "public",
-   "views": 271,
+   "views": 268,
    "likes": 4,
    "comments": 0,
+   "shares": 0,
+   "watch_min": 2,
+   "avg_view_sec": 34,
    "avg_view_pct": 38.3,
    "subs_gained": 0,
-   "forecast_7d": 422,
-   "forecast_30d": 544,
+   "forecast_7d": 417,
+   "forecast_30d": 538,
    "confidence": "средняя",
-   "age_h": 47.4,
-   "updated": "2026-10-26T13:23:38Z",
+   "age_h": 47.6,
+   "updated": "2026-10-26T13:37:06Z",
    "source": "api",
    "subscribers": 23,
    "subscribers_30d": null,
    "growth_note": "по умолчанию",
-   "warning": null
+   "warning": null,
+   "retention": null
   },
   {
    "film": "video13",
    "topic": "Aluminium",
    "hook": "число",
+   "title": "Aluminium Cost More Than Gold. Now It's Trash in 3 Seconds",
+   "thumb": "https://i.ytimg.com/vi/22r6DRyDS88/mqdefault.jpg",
+   "youtube": "https://youtu.be/22r6DRyDS88",
+   "duration_s": 90,
    "publish_date": "2026-10-25",
    "status": "public",
-   "views": 1113,
+   "views": 1111,
    "likes": 50,
    "comments": 2,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
-   "forecast_7d": 2219,
-   "forecast_30d": 2863,
+   "forecast_7d": 2208,
+   "forecast_30d": 2848,
    "confidence": "низкая",
-   "age_h": 23.4,
-   "updated": "2026-10-26T13:23:38Z",
+   "age_h": 23.6,
+   "updated": "2026-10-26T13:37:06Z",
    "source": "api",
    "subscribers": 23,
    "subscribers_30d": null,
    "growth_note": "по умолчанию",
-   "warning": null
+   "warning": null,
+   "retention": null
   },
   {
    "film": "video14",
    "topic": "Wallpaper",
    "hook": "загадка",
+   "title": "Did Green Wallpaper Kill Napoleon?",
+   "thumb": "https://i9.ytimg.com/vi/jHXPZR2HOYY/mqdefault.jpg?sqp=CISu_dYG&rs=AOn4CLDZLoaT_UEz0g_wvQxcpN4tYhFO6A",
+   "youtube": "https://youtu.be/jHXPZR2HOYY",
+   "duration_s": 90,
    "publish_date": "2026-10-26",
    "status": "private",
    "views": 0,
    "likes": 0,
    "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -0.6,
-   "updated": "2026-10-26T13:23:38Z",
+   "age_h": -0.4,
+   "updated": "2026-10-26T13:37:06Z",
    "source": "api",
    "subscribers": 23,
    "subscribers_30d": null,
    "growth_note": "по умолчанию",
-   "warning": null
+   "warning": null,
+   "retention": null
   },
   {
    "film": "video15",
    "topic": "Margarine",
    "hook": "«каждый день, но…»",
+   "title": "Why Was Margarine Once Pink by Law?",
+   "thumb": "https://i9.ytimg.com/vi/IoEk9h3NtAc/mqdefault.jpg?sqp=CISu_dYG&rs=AOn4CLCHccpkQ0tO7Xos7feTud7a4HrnlQ",
+   "youtube": "https://youtu.be/IoEk9h3NtAc",
+   "duration_s": 90,
    "publish_date": "2026-10-26",
    "status": "private",
    "views": 0,
    "likes": 0,
    "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -4.6,
-   "updated": "2026-10-26T13:23:38Z",
+   "age_h": -4.4,
+   "updated": "2026-10-26T13:37:06Z",
    "source": "api",
    "subscribers": 23,
    "subscribers_30d": null,
    "growth_note": "по умолчанию",
-   "warning": null
+   "warning": null,
+   "retention": null
   },
   {
    "film": "video16",
    "topic": "Ketchup",
    "hook": "развенчание мифа",
+   "title": "Was Ketchup Always Made of Tomatoes?",
+   "thumb": "https://i9.ytimg.com/vi/yC8t_hdZ_ow/mqdefault.jpg?sqp=CISu_dYG&rs=AOn4CLBR-z_azGtZSTvYA23PlgfLVQuQLw",
+   "youtube": "https://youtu.be/yC8t_hdZ_ow",
+   "duration_s": 87,
    "publish_date": "2026-10-27",
    "status": "private",
    "views": 0,
    "likes": 0,
    "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -24.6,
-   "updated": "2026-10-26T13:23:38Z",
+   "age_h": -24.4,
+   "updated": "2026-10-26T13:37:06Z",
    "source": "api",
    "subscribers": 23,
    "subscribers_30d": null,
    "growth_note": "по умолчанию",
-   "warning": null
+   "warning": null,
+   "retention": null
   }
+ ],
+ "channel": {
+  "id": "UC4RFyaRtrMwiBejbC3usX-A",
+  "title": "Historic Bind",
+  "thumb": "https://yt3.ggpht.com/u7dwRu88ApFsvndybToftqSw04gS_z_PMFq_Sazg97RLrrJoAtPaxDHhjKpNZvpJzN0PlhEQsg=s88-c-k-c0x00ffffff-no-rj",
+  "subscribers": 23,
+  "views": 16536,
+  "videos": 13,
+  "forecast_30d_subscribers": null
+ },
+ "daily": [
+  [
+   "2026-10-13",
+   780,
+   135,
+   1,
+   0
+  ],
+  [
+   "2026-10-14",
+   1846,
+   440,
+   1,
+   0
+  ],
+  [
+   "2026-10-15",
+   1569,
+   554,
+   8,
+   0
+  ],
+  [
+   "2026-10-16",
+   1437,
+   428,
+   0,
+   0
+  ],
+  [
+   "2026-10-17",
+   2336,
+   884,
+   7,
+   1
+  ],
+  [
+   "2026-10-18",
+   1443,
+   377,
+   1,
+   0
+  ],
+  [
+   "2026-10-19",
+   971,
+   285,
+   0,
+   0
+  ],
+  [
+   "2026-10-20",
+   1153,
+   555,
+   0,
+   0
+  ],
+  [
+   "2026-10-21",
+   2092,
+   869,
+   2,
+   0
+  ],
+  [
+   "2026-10-22",
+   1401,
+   589,
+   0,
+   0
+  ],
+  [
+   "2026-10-23",
+   1050,
+   610,
+   1,
+   0
+  ]
+ ],
+ "traffic": [
+  [
+   "SHORTS",
+   14964
+  ],
+  [
+   "YT_SEARCH",
+   593
+  ],
+  [
+   "YT_OTHER_PAGE",
+   390
+  ],
+  [
+   "YT_CHANNEL",
+   77
+  ],
+  [
+   "SUBSCRIBER",
+   23
+  ],
+  [
+   "EXT_URL",
+   7
+  ],
+  [
+   "SOUND_PAGE",
+   3
+  ],
+  [
+   "NO_LINK_OTHER",
+   1
+  ],
+  [
+   "PLAYLIST",
+   1
+  ]
+ ],
+ "countries": [
+  [
+   "US",
+   3202
+  ],
+  [
+   "IN",
+   1581
+  ],
+  [
+   "GB",
+   774
+  ],
+  [
+   "DE",
+   675
+  ],
+  [
+   "NL",
+   633
+  ],
+  [
+   "CA",
+   607
+  ],
+  [
+   "RU",
+   522
+  ],
+  [
+   "PH",
+   476
+  ],
+  [
+   "ZA",
+   353
+  ],
+  [
+   "PL",
+   283
+  ],
+  [
+   "ID",
+   281
+  ],
+  [
+   "IT",
+   278
+  ]
+ ],
+ "devices": [
+  [
+   "MOBILE",
+   13418
+  ],
+  [
+   "TABLET",
+   1294
+  ],
+  [
+   "DESKTOP",
+   960
+  ],
+  [
+   "TV",
+   364
+  ]
+ ],
+ "audience": [
+  [
+   "age13-17",
+   "female",
+   1.1
+  ],
+  [
+   "age18-24",
+   "female",
+   1.8
+  ],
+  [
+   "age25-34",
+   "female",
+   4.8
+  ],
+  [
+   "age35-44",
+   "female",
+   5
+  ],
+  [
+   "age45-54",
+   "female",
+   2.3
+  ],
+  [
+   "age55-64",
+   "female",
+   0.2
+  ],
+  [
+   "age13-17",
+   "male",
+   11.9
+  ],
+  [
+   "age18-24",
+   "male",
+   17.1
+  ],
+  [
+   "age25-34",
+   "male",
+   34.5
+  ],
+  [
+   "age35-44",
+   "male",
+   13.9
+  ],
+  [
+   "age45-54",
+   "male",
+   7.1
+  ],
+  [
+   "age55-64",
+   "male",
+   0.3
+  ]
+ ],
+ "content_type": [
+  [
+   "shorts",
+   16071
+  ]
  ]
 }
