@@ -1,5 +1,5 @@
 {
- "built": "2026-10-27T05:10:37Z",
+ "built": "2026-10-27T09:32:06Z",
  "videos": [
   {
    "film": "video1",
@@ -299,23 +299,23 @@
    "avg_view_pct": 71.8,
    "subs_gained": 0,
    "forecast_7d": 1261,
-   "forecast_30d": 1435,
+   "forecast_30d": 1396,
    "confidence": "высокая",
-   "age_h": 327.0,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 331.4,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
      0.01,
-     1.401
+     1.402
     ],
     [
      0.06,
-     1.209
+     1.21
     ],
     [
      0.11,
@@ -335,63 +335,63 @@
     ],
     [
      0.31,
-     0.76
+     0.762
     ],
     [
      0.36,
-     0.719
+     0.72
     ],
     [
      0.41,
-     0.673
+     0.675
     ],
     [
      0.46,
-     0.667
+     0.668
     ],
     [
      0.51,
-     0.645
+     0.646
     ],
     [
      0.56,
-     0.632
+     0.633
     ],
     [
      0.61,
-     0.63
+     0.631
     ],
     [
      0.66,
-     0.619
+     0.62
     ],
     [
      0.71,
-     0.606
+     0.607
     ],
     [
      0.76,
-     0.597
+     0.598
     ],
     [
      0.81,
-     0.586
+     0.587
     ],
     [
      0.86,
-     0.58
+     0.581
     ],
     [
      0.91,
-     0.558
+     0.559
     ],
     [
      0.96,
-     0.503
+     0.504
     ],
     [
      1,
-     0.316
+     0.317
     ]
    ]
   },
@@ -414,14 +414,14 @@
    "avg_view_pct": 71.8,
    "subs_gained": 3,
    "forecast_7d": 1532,
-   "forecast_30d": 1765,
+   "forecast_30d": 1712,
    "confidence": "высокая",
-   "age_h": 303.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 307.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
@@ -529,14 +529,14 @@
    "avg_view_pct": 63.2,
    "subs_gained": 10,
    "forecast_7d": 2756,
-   "forecast_30d": 3219,
+   "forecast_30d": 3113,
    "confidence": "высокая",
-   "age_h": 279.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 283.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
@@ -644,14 +644,14 @@
    "avg_view_pct": 55.8,
    "subs_gained": 0,
    "forecast_7d": 1494,
-   "forecast_30d": 1771,
+   "forecast_30d": 1707,
    "confidence": "высокая",
-   "age_h": 255.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 259.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
@@ -759,14 +759,14 @@
    "avg_view_pct": 48,
    "subs_gained": 3,
    "forecast_7d": 1410,
-   "forecast_30d": 1699,
+   "forecast_30d": 1632,
    "confidence": "высокая",
-   "age_h": 231.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 235.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
@@ -874,14 +874,14 @@
    "avg_view_pct": 55.2,
    "subs_gained": 1,
    "forecast_7d": 1356,
-   "forecast_30d": 1663,
+   "forecast_30d": 1591,
    "confidence": "высокая",
-   "age_h": 207.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 211.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
@@ -989,14 +989,14 @@
    "avg_view_pct": 65.0,
    "subs_gained": 0,
    "forecast_7d": 1710,
-   "forecast_30d": 2140,
+   "forecast_30d": 2038,
    "confidence": "высокая",
-   "age_h": 183.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 187.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
@@ -1103,15 +1103,15 @@
    "avg_view_sec": 62,
    "avg_view_pct": 77.1,
    "subs_gained": 0,
-   "forecast_7d": 1037,
-   "forecast_30d": 1317,
+   "forecast_7d": 1026,
+   "forecast_30d": 1241,
    "confidence": "высокая",
-   "age_h": 159.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 163.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
@@ -1218,15 +1218,15 @@
    "avg_view_sec": 45,
    "avg_view_pct": 50.6,
    "subs_gained": 2,
-   "forecast_7d": 1568,
-   "forecast_30d": 1990,
+   "forecast_7d": 1532,
+   "forecast_30d": 1853,
    "confidence": "высокая",
-   "age_h": 134.7,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 139.0,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
@@ -1333,15 +1333,15 @@
    "avg_view_sec": 39,
    "avg_view_pct": 43.7,
    "subs_gained": 0,
-   "forecast_7d": 1493,
-   "forecast_30d": 1895,
+   "forecast_7d": 1438,
+   "forecast_30d": 1739,
    "confidence": "высокая",
-   "age_h": 111.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 115.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
@@ -1446,17 +1446,17 @@
    "shares": 0,
    "watch_min": 557,
    "avg_view_sec": 55,
-   "avg_view_pct": 62.6,
+   "avg_view_pct": 62.5,
    "subs_gained": 1,
-   "forecast_7d": 1319,
-   "forecast_30d": 1675,
+   "forecast_7d": 1247,
+   "forecast_30d": 1508,
    "confidence": "высокая",
-   "age_h": 87.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 91.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
@@ -1477,7 +1477,7 @@
     ],
     [
      0.21,
-     0.748
+     0.75
     ],
     [
      0.26,
@@ -1555,7 +1555,7 @@
    "duration_s": 89,
    "publish_date": "2026-10-24",
    "status": "public",
-   "views": 280,
+   "views": 283,
    "likes": 5,
    "comments": 0,
    "shares": 0,
@@ -1563,100 +1563,100 @@
    "avg_view_sec": 50,
    "avg_view_pct": 56.6,
    "subs_gained": 0,
-   "forecast_7d": 386,
-   "forecast_30d": 490,
+   "forecast_7d": 359,
+   "forecast_30d": 434,
    "confidence": "средняя",
-   "age_h": 63.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 67.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": [
     [
      0.01,
-     1.293
+     1.286
     ],
     [
      0.06,
-     1.06
+     1.054
     ],
     [
      0.11,
-     0.879
+     0.884
     ],
     [
      0.16,
-     0.724
+     0.732
     ],
     [
      0.21,
-     0.681
+     0.688
     ],
     [
      0.26,
-     0.621
+     0.634
     ],
     [
      0.31,
-     0.603
+     0.616
     ],
     [
      0.36,
-     0.569
+     0.58
     ],
     [
      0.41,
-     0.569
+     0.58
     ],
     [
      0.46,
-     0.526
+     0.536
     ],
     [
      0.51,
-     0.5
+     0.509
     ],
     [
      0.56,
-     0.5
+     0.509
     ],
     [
      0.61,
-     0.491
+     0.5
     ],
     [
      0.66,
-     0.474
+     0.482
     ],
     [
      0.71,
-     0.457
+     0.464
     ],
     [
      0.76,
-     0.44
+     0.446
     ],
     [
      0.81,
-     0.422
+     0.429
     ],
     [
      0.86,
-     0.414
+     0.42
     ],
     [
      0.91,
-     0.388
+     0.393
     ],
     [
      0.96,
-     0.388
+     0.393
     ],
     [
      1,
-     0.371
+     0.375
     ]
    ]
   },
@@ -1678,15 +1678,15 @@
    "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
-   "forecast_7d": 1799,
-   "forecast_30d": 2284,
+   "forecast_7d": 1588,
+   "forecast_30d": 1920,
    "confidence": "средняя",
-   "age_h": 39.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 43.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": null
   },
@@ -1700,7 +1700,7 @@
    "duration_s": 90,
    "publish_date": "2026-10-26",
    "status": "public",
-   "views": 1043,
+   "views": 1045,
    "likes": 27,
    "comments": 0,
    "shares": null,
@@ -1708,15 +1708,15 @@
    "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
-   "forecast_7d": 2295,
-   "forecast_30d": 2913,
+   "forecast_7d": 1833,
+   "forecast_30d": 2217,
    "confidence": "низкая",
-   "age_h": 15.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 19.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": null
   },
@@ -1730,7 +1730,7 @@
    "duration_s": 90,
    "publish_date": "2026-10-26",
    "status": "public",
-   "views": 1263,
+   "views": 1318,
    "likes": 24,
    "comments": 0,
    "shares": null,
@@ -1738,15 +1738,15 @@
    "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
-   "forecast_7d": 3073,
-   "forecast_30d": 3901,
+   "forecast_7d": 2455,
+   "forecast_30d": 2969,
    "confidence": "низкая",
-   "age_h": 11.2,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": 15.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": null
   },
@@ -1755,7 +1755,7 @@
    "topic": "Ketchup",
    "hook": "развенчание мифа",
    "title": "Was Ketchup Always Made of Tomatoes?",
-   "thumb": "https://i9.ytimg.com/vi/yC8t_hdZ_ow/mqdefault.jpg?sqp=CKjkgNcG&rs=AOn4CLATcZ6rw9XdGixCBvBKL6rYUCXJow",
+   "thumb": "https://i9.ytimg.com/vi/yC8t_hdZ_ow/mqdefault.jpg?sqp=CJjegdcG&rs=AOn4CLB9uuJ0GUUW8oS0HyTZapZ5s2MplA",
    "youtube": "https://youtu.be/yC8t_hdZ_ow",
    "duration_s": 87,
    "publish_date": "2026-10-27",
@@ -1771,12 +1771,12 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -8.8,
-   "updated": "2026-10-27T05:10:23Z",
+   "age_h": -4.5,
+   "updated": "2026-10-27T09:31:54Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 206,
-   "growth_note": "по 93 замерам",
+   "subscribers_30d": 168,
+   "growth_note": "по 101 замерам",
    "warning": null,
    "retention": null
   }
@@ -1788,7 +1788,7 @@
   "subscribers": 27,
   "views": 19977,
   "videos": 15,
-  "forecast_30d_subscribers": 206
+  "forecast_30d_subscribers": 168
  },
  "daily": [
   [
@@ -1879,7 +1879,7 @@
  "traffic": [
   [
    "SHORTS",
-   15340
+   15338
   ],
   [
    "YT_SEARCH",
@@ -1891,7 +1891,7 @@
   ],
   [
    "YT_CHANNEL",
-   77
+   72
   ],
   [
    "SUBSCRIBER",
@@ -1899,7 +1899,7 @@
   ],
   [
    "EXT_URL",
-   7
+   6
   ],
   [
    "SOUND_PAGE",
@@ -1967,7 +1967,7 @@
  "devices": [
   [
    "MOBILE",
-   13782
+   13776
   ],
   [
    "TABLET",
@@ -1975,7 +1975,7 @@
   ],
   [
    "DESKTOP",
-   984
+   982
   ],
   [
    "TV",
@@ -2047,7 +2047,7 @@
  "content_type": [
   [
    "shorts",
-   16490
+   16478
   ]
  ]
 }
