@@ -1,5 +1,5 @@
 {
- "built": "2026-10-27T09:32:06Z",
+ "built": "2026-10-27T09:33:31Z",
  "videos": [
   {
    "film": "video1",
@@ -160,6 +160,16 @@
    "slot": "17:00",
    "youtube": "https://youtu.be/yC8t_hdZ_ow",
    "release": "https://github.com/t1qqe/cartoontest/releases/tag/video16"
+  },
+  {
+   "film": "video17",
+   "topic": "Alarm clock",
+   "title": "POV: your job is waking up the CITY",
+   "hook": "POV",
+   "publish_date": "2026-10-27",
+   "slot": "21:00",
+   "youtube": "https://youtu.be/bfsoosTV8KI",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video17"
   }
  ],
  "ideas": [
@@ -175,96 +185,91 @@
   },
   {
    "rank": 3,
-   "topic": "ALARM CLOCK",
-   "angle": "Knocker-up, Bell, Snooze"
-  },
-  {
-   "rank": 4,
    "topic": "BANNED EVERYDAY THINGS",
    "angle": "ranked"
   },
   {
-   "rank": 5,
+   "rank": 4,
    "topic": "MATCHES",
    "angle": "Fire, Poison, Strike"
   },
   {
-   "rank": 6,
+   "rank": 5,
    "topic": "TOILET",
    "angle": "Stink, Sewer, Flush"
   },
   {
-   "rank": 7,
+   "rank": 6,
    "topic": "TULIPS",
    "angle": "Bulb, Bubble, Myth"
   },
   {
-   "rank": 8,
+   "rank": 7,
    "topic": "ACCIDENTAL INVENTIONS",
    "angle": "ranked"
   },
   {
-   "rank": 9,
+   "rank": 8,
    "topic": "CANNED FOOD",
    "angle": "Prize, Army, Lead"
   },
   {
-   "rank": 10,
+   "rank": 9,
    "topic": "PENCIL",
    "angle": "Smuggling, Blockade, Desk"
   },
   {
-   "rank": 11,
+   "rank": 10,
    "topic": "TOMATO",
    "angle": "Poison, Sauce, Staple"
   },
   {
-   "rank": 12,
+   "rank": 11,
    "topic": "CHEWING GUM",
    "angle": "Sap, Ration, Ban"
   },
   {
-   "rank": 13,
+   "rank": 12,
    "topic": "ICE",
    "angle": "Luxury, Empire, Comfort"
   },
   {
-   "rank": 14,
+   "rank": 13,
    "topic": "BANANA",
    "angle": "Republic, Clone, Threat"
   },
   {
-   "rank": 15,
+   "rank": 14,
    "topic": "MIRROR",
    "angle": "Magic, Secret, Selfie"
   },
   {
-   "rank": 16,
+   "rank": 15,
    "topic": "PEPPER",
    "angle": "Ransom, Currency, Table"
   },
   {
-   "rank": 17,
+   "rank": 16,
    "topic": "FORK",
    "angle": "Scandal, Status, Habit"
   },
   {
-   "rank": 18,
+   "rank": 17,
    "topic": "UMBRELLA",
    "angle": "Royalty, Mockery, Everyday"
   },
   {
-   "rank": 19,
+   "rank": 18,
    "topic": "BREAD",
    "angle": "Riot, Revolution, Science"
   },
   {
-   "rank": 20,
+   "rank": 19,
    "topic": "LIGHTBULB",
    "angle": "Wonder, Cartel, Ban"
   },
   {
-   "rank": 21,
+   "rank": 20,
    "topic": "FLUORIDE",
    "angle": "Stain, Discovery, Debate"
   }
@@ -299,14 +304,14 @@
    "avg_view_pct": 71.8,
    "subs_gained": 0,
    "forecast_7d": 1261,
-   "forecast_30d": 1396,
+   "forecast_30d": 1383,
    "confidence": "высокая",
    "age_h": 331.4,
-   "updated": "2026-10-27T09:31:54Z",
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -414,14 +419,14 @@
    "avg_view_pct": 71.8,
    "subs_gained": 3,
    "forecast_7d": 1532,
-   "forecast_30d": 1712,
+   "forecast_30d": 1695,
    "confidence": "высокая",
    "age_h": 307.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -529,14 +534,14 @@
    "avg_view_pct": 63.2,
    "subs_gained": 10,
    "forecast_7d": 2756,
-   "forecast_30d": 3113,
+   "forecast_30d": 3079,
    "confidence": "высокая",
-   "age_h": 283.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "age_h": 283.6,
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -644,14 +649,14 @@
    "avg_view_pct": 55.8,
    "subs_gained": 0,
    "forecast_7d": 1494,
-   "forecast_30d": 1707,
+   "forecast_30d": 1687,
    "confidence": "высокая",
    "age_h": 259.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -759,14 +764,14 @@
    "avg_view_pct": 48,
    "subs_gained": 3,
    "forecast_7d": 1410,
-   "forecast_30d": 1632,
+   "forecast_30d": 1610,
    "confidence": "высокая",
-   "age_h": 235.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "age_h": 235.6,
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -874,14 +879,14 @@
    "avg_view_pct": 55.2,
    "subs_gained": 1,
    "forecast_7d": 1356,
-   "forecast_30d": 1591,
+   "forecast_30d": 1568,
    "confidence": "высокая",
-   "age_h": 211.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "age_h": 211.6,
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -989,14 +994,14 @@
    "avg_view_pct": 65.0,
    "subs_gained": 0,
    "forecast_7d": 1710,
-   "forecast_30d": 2038,
+   "forecast_30d": 2006,
    "confidence": "высокая",
    "age_h": 187.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -1104,14 +1109,14 @@
    "avg_view_pct": 77.1,
    "subs_gained": 0,
    "forecast_7d": 1026,
-   "forecast_30d": 1241,
+   "forecast_30d": 1219,
    "confidence": "высокая",
-   "age_h": 163.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "age_h": 163.6,
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -1218,15 +1223,15 @@
    "avg_view_sec": 45,
    "avg_view_pct": 50.6,
    "subs_gained": 2,
-   "forecast_7d": 1532,
-   "forecast_30d": 1853,
+   "forecast_7d": 1525,
+   "forecast_30d": 1813,
    "confidence": "высокая",
    "age_h": 139.0,
-   "updated": "2026-10-27T09:31:54Z",
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -1333,15 +1338,15 @@
    "avg_view_sec": 39,
    "avg_view_pct": 43.7,
    "subs_gained": 0,
-   "forecast_7d": 1438,
-   "forecast_30d": 1739,
+   "forecast_7d": 1425,
+   "forecast_30d": 1694,
    "confidence": "высокая",
-   "age_h": 115.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "age_h": 115.6,
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -1448,15 +1453,15 @@
    "avg_view_sec": 55,
    "avg_view_pct": 62.5,
    "subs_gained": 1,
-   "forecast_7d": 1247,
-   "forecast_30d": 1508,
+   "forecast_7d": 1229,
+   "forecast_30d": 1461,
    "confidence": "высокая",
-   "age_h": 91.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "age_h": 91.6,
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -1563,15 +1568,15 @@
    "avg_view_sec": 50,
    "avg_view_pct": 56.6,
    "subs_gained": 0,
-   "forecast_7d": 359,
-   "forecast_30d": 434,
+   "forecast_7d": 351,
+   "forecast_30d": 418,
    "confidence": "средняя",
-   "age_h": 67.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "age_h": 67.6,
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": [
     [
@@ -1678,15 +1683,15 @@
    "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
-   "forecast_7d": 1588,
-   "forecast_30d": 1920,
+   "forecast_7d": 1538,
+   "forecast_30d": 1828,
    "confidence": "средняя",
-   "age_h": 43.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "age_h": 43.6,
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": null
   },
@@ -1708,15 +1713,15 @@
    "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
-   "forecast_7d": 1833,
-   "forecast_30d": 2217,
+   "forecast_7d": 1742,
+   "forecast_30d": 2071,
    "confidence": "низкая",
-   "age_h": 19.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "age_h": 19.6,
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": null
   },
@@ -1738,15 +1743,15 @@
    "avg_view_sec": null,
    "avg_view_pct": null,
    "subs_gained": null,
-   "forecast_7d": 2455,
-   "forecast_30d": 2969,
+   "forecast_7d": 2320,
+   "forecast_30d": 2758,
    "confidence": "низкая",
    "age_h": 15.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": null
   },
@@ -1771,12 +1776,42 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -4.5,
-   "updated": "2026-10-27T09:31:54Z",
+   "age_h": -4.4,
+   "updated": "2026-10-27T09:33:20Z",
    "source": "api",
    "subscribers": 27,
-   "subscribers_30d": 168,
-   "growth_note": "по 101 замерам",
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
+   "warning": null,
+   "retention": null
+  },
+  {
+   "film": "video17",
+   "topic": "Alarm clock",
+   "hook": "POV",
+   "title": "POV: your job is waking up the CITY",
+   "thumb": "https://i9.ytimg.com/vi/bfsoosTV8KI/mqdefault.jpg?sqp=CJjegdcG&rs=AOn4CLBYdhmZLUhJ4w88IM2RPtqKU8n9kw",
+   "youtube": "https://youtu.be/bfsoosTV8KI",
+   "duration_s": 66,
+   "publish_date": "2026-10-27",
+   "status": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -8.4,
+   "updated": "2026-10-27T09:33:20Z",
+   "source": "api",
+   "subscribers": 27,
+   "subscribers_30d": 167,
+   "growth_note": "по 109 замерам",
    "warning": null,
    "retention": null
   }
@@ -1788,7 +1823,7 @@
   "subscribers": 27,
   "views": 19977,
   "videos": 15,
-  "forecast_30d_subscribers": 168
+  "forecast_30d_subscribers": 167
  },
  "daily": [
   [
