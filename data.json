@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T22:09:59Z",
+ "built": "2026-11-09T04:39:24Z",
  "videos": [
   {
    "film": "video1",
@@ -310,6 +310,86 @@
    "slot": "18:00",
    "youtube": "https://youtu.be/S9nNmU9_wiY",
    "release": "https://github.com/t1qqe/cartoontest/releases/tag/video31"
+  },
+  {
+   "film": "video33",
+   "topic": "Victorian jobs (лонг)",
+   "title": "The 7 WORST Jobs in Victorian London (You'd Quit by Noon)",
+   "hook": "лонг 16:9",
+   "publish_date": "2026-11-09",
+   "slot": "19:00",
+   "youtube": "https://youtu.be/UCCANXgJX1s",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video33"
+  },
+  {
+   "film": "video33 short 1",
+   "topic": "Victorian jobs — Short 1",
+   "title": "POV: your job is hunting treasure in London's SEWERS 🐀",
+   "hook": "POV",
+   "publish_date": "2026-11-09",
+   "slot": "22:00",
+   "youtube": "https://youtu.be/xOnlJ7WgQkQ",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video33"
+  },
+  {
+   "film": "video33 short 2",
+   "topic": "Victorian jobs — Short 2",
+   "title": "POV: your job is making hats, and they make you MAD 🎩",
+   "hook": "POV",
+   "publish_date": "2026-11-10",
+   "slot": "12:00",
+   "youtube": "https://youtu.be/aKKSAwnW8q0",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video33"
+  },
+  {
+   "film": "video33 short 3",
+   "topic": "Victorian jobs — Short 3",
+   "title": "POV: your job is wading barefoot in THAMES mud 🦶",
+   "hook": "POV",
+   "publish_date": "2026-11-10",
+   "slot": "17:00",
+   "youtube": "https://youtu.be/qPgVdp1HDHU",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video33"
+  },
+  {
+   "film": "video33 short 4",
+   "topic": "Victorian jobs — Short 4",
+   "title": "POV: your job is sweeping a road between HORSES 🐎",
+   "hook": "POV",
+   "publish_date": "2026-11-10",
+   "slot": "22:00",
+   "youtube": "https://youtu.be/e1WGrNLvJpc",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video33"
+  },
+  {
+   "film": "video33 short 5",
+   "topic": "Victorian jobs — Short 5",
+   "title": "POV: your job is collecting BONES from the gutter 🦴",
+   "hook": "POV",
+   "publish_date": "2026-11-11",
+   "slot": "12:00",
+   "youtube": "https://youtu.be/Wb2FQU7WD5c",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video33"
+  },
+  {
+   "film": "video33 short 6",
+   "topic": "Victorian jobs — Short 6",
+   "title": "POV: you're digging the world's first SUBWAY 🚂",
+   "hook": "POV",
+   "publish_date": "2026-11-11",
+   "slot": "17:00",
+   "youtube": "https://youtu.be/bP8BQgD0tGI",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video33"
+  },
+  {
+   "film": "video33 short 7",
+   "topic": "Victorian jobs — Short 7",
+   "title": "POV: your job is making matches, and your jaw GLOWS 🔥",
+   "hook": "POV",
+   "publish_date": "2026-11-11",
+   "slot": "22:00",
+   "youtube": "https://youtu.be/GjonqQ1GIaw",
+   "release": "https://github.com/t1qqe/cartoontest/releases/tag/video33"
   }
  ],
  "ideas": [
@@ -564,14 +644,14 @@
    "avg_view_pct": 72.0,
    "subs_gained": 0,
    "forecast_7d": 1268,
-   "forecast_30d": 1286,
+   "forecast_30d": 1285,
    "confidence": "высокая",
-   "age_h": 632.0,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 638.5,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -679,14 +759,14 @@
    "avg_view_pct": 71.7,
    "subs_gained": 3,
    "forecast_7d": 1536,
-   "forecast_30d": 1565,
+   "forecast_30d": 1563,
    "confidence": "высокая",
-   "age_h": 608.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 614.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -785,7 +865,7 @@
    "duration_s": 61,
    "publish_date": "2026-10-15",
    "status": "public",
-   "views": 2791,
+   "views": 2792,
    "likes": 67,
    "comments": 1,
    "shares": 2,
@@ -793,15 +873,15 @@
    "avg_view_sec": 38,
    "avg_view_pct": 63.3,
    "subs_gained": 10,
-   "forecast_7d": 2791,
-   "forecast_30d": 2856,
+   "forecast_7d": 2792,
+   "forecast_30d": 2853,
    "confidence": "высокая",
-   "age_h": 584.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 590.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -909,14 +989,14 @@
    "avg_view_pct": 55.9,
    "subs_gained": 0,
    "forecast_7d": 1508,
-   "forecast_30d": 1550,
+   "forecast_30d": 1548,
    "confidence": "высокая",
-   "age_h": 560.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 566.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -1024,14 +1104,14 @@
    "avg_view_pct": 48.1,
    "subs_gained": 4,
    "forecast_7d": 1427,
-   "forecast_30d": 1474,
+   "forecast_30d": 1472,
    "confidence": "высокая",
-   "age_h": 536.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 542.7,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -1139,14 +1219,14 @@
    "avg_view_pct": 55.2,
    "subs_gained": 1,
    "forecast_7d": 1361,
-   "forecast_30d": 1413,
+   "forecast_30d": 1411,
    "confidence": "высокая",
-   "age_h": 512.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 518.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -1254,14 +1334,14 @@
    "avg_view_pct": 64.8,
    "subs_gained": 0,
    "forecast_7d": 1716,
-   "forecast_30d": 1791,
+   "forecast_30d": 1788,
    "confidence": "высокая",
-   "age_h": 488.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 494.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -1360,7 +1440,7 @@
    "duration_s": 81,
    "publish_date": "2026-10-20",
    "status": "public",
-   "views": 1029,
+   "views": 1030,
    "likes": 15,
    "comments": 0,
    "shares": 0,
@@ -1368,15 +1448,15 @@
    "avg_view_sec": 62,
    "avg_view_pct": 76.9,
    "subs_gained": 0,
-   "forecast_7d": 1029,
-   "forecast_30d": 1080,
+   "forecast_7d": 1030,
+   "forecast_30d": 1079,
    "confidence": "высокая",
-   "age_h": 464.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 470.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -1484,14 +1564,14 @@
    "avg_view_pct": 50.9,
    "subs_gained": 2,
    "forecast_7d": 1478,
-   "forecast_30d": 1560,
+   "forecast_30d": 1557,
    "confidence": "высокая",
-   "age_h": 439.7,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 446.1,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -1599,14 +1679,14 @@
    "avg_view_pct": 44.1,
    "subs_gained": 0,
    "forecast_7d": 1321,
-   "forecast_30d": 1403,
+   "forecast_30d": 1400,
    "confidence": "высокая",
-   "age_h": 416.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 422.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -1714,14 +1794,14 @@
    "avg_view_pct": 62.9,
    "subs_gained": 1,
    "forecast_7d": 1081,
-   "forecast_30d": 1155,
+   "forecast_30d": 1153,
    "confidence": "высокая",
-   "age_h": 392.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 398.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -1829,14 +1909,14 @@
    "avg_view_pct": 56.4,
    "subs_gained": 0,
    "forecast_7d": 298,
-   "forecast_30d": 321,
+   "forecast_30d": 320,
    "confidence": "высокая",
-   "age_h": 368.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 374.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -1944,14 +2024,14 @@
    "avg_view_pct": 72.5,
    "subs_gained": 3,
    "forecast_7d": 1155,
-   "forecast_30d": 1252,
+   "forecast_30d": 1249,
    "confidence": "высокая",
-   "age_h": 344.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 350.7,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -2059,14 +2139,14 @@
    "avg_view_pct": 57.4,
    "subs_gained": 2,
    "forecast_7d": 1110,
-   "forecast_30d": 1213,
+   "forecast_30d": 1210,
    "confidence": "высокая",
-   "age_h": 320.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 326.7,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -2174,14 +2254,14 @@
    "avg_view_pct": 68.6,
    "subs_gained": 2,
    "forecast_7d": 1516,
-   "forecast_30d": 1659,
+   "forecast_30d": 1655,
    "confidence": "высокая",
-   "age_h": 316.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 322.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -2289,14 +2369,14 @@
    "avg_view_pct": 62.2,
    "subs_gained": 1,
    "forecast_7d": 1426,
-   "forecast_30d": 1572,
+   "forecast_30d": 1568,
    "confidence": "высокая",
-   "age_h": 296.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 302.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -2404,14 +2484,14 @@
    "avg_view_pct": 84.7,
    "subs_gained": 9,
    "forecast_7d": 6964,
-   "forecast_30d": 7686,
+   "forecast_30d": 7666,
    "confidence": "высокая",
-   "age_h": 292.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 298.7,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -2519,14 +2599,14 @@
    "avg_view_pct": 63.9,
    "subs_gained": 1,
    "forecast_7d": 1335,
-   "forecast_30d": 1485,
+   "forecast_30d": 1481,
    "confidence": "высокая",
-   "age_h": 272.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 278.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -2634,14 +2714,14 @@
    "avg_view_pct": 66.7,
    "subs_gained": 2,
    "forecast_7d": 1267,
-   "forecast_30d": 1412,
+   "forecast_30d": 1408,
    "confidence": "высокая",
-   "age_h": 268.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 274.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -2749,14 +2829,14 @@
    "avg_view_pct": 76.4,
    "subs_gained": 1,
    "forecast_7d": 2101,
-   "forecast_30d": 2361,
+   "forecast_30d": 2354,
    "confidence": "высокая",
-   "age_h": 248.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 254.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -2864,14 +2944,14 @@
    "avg_view_pct": 74.1,
    "subs_gained": 3,
    "forecast_7d": 1651,
-   "forecast_30d": 1858,
+   "forecast_30d": 1853,
    "confidence": "высокая",
-   "age_h": 244.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 250.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -2979,14 +3059,14 @@
    "avg_view_pct": 83.8,
    "subs_gained": 12,
    "forecast_7d": 6235,
-   "forecast_30d": 7084,
+   "forecast_30d": 7060,
    "confidence": "высокая",
-   "age_h": 224.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 230.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -3094,14 +3174,14 @@
    "avg_view_pct": 58.1,
    "subs_gained": 2,
    "forecast_7d": 1473,
-   "forecast_30d": 1677,
+   "forecast_30d": 1671,
    "confidence": "высокая",
-   "age_h": 220.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 226.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -3209,14 +3289,14 @@
    "avg_view_pct": 54.1,
    "subs_gained": 0,
    "forecast_7d": 1034,
-   "forecast_30d": 1192,
+   "forecast_30d": 1188,
    "confidence": "высокая",
-   "age_h": 196.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 202.7,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -3324,14 +3404,14 @@
    "avg_view_pct": 64.7,
    "subs_gained": 0,
    "forecast_7d": 1207,
-   "forecast_30d": 1411,
+   "forecast_30d": 1405,
    "confidence": "высокая",
-   "age_h": 172.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 178.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -3430,28 +3510,28 @@
    "duration_s": 50,
    "publish_date": "2026-11-02",
    "status": "public",
-   "views": 6135,
+   "views": 6144,
    "likes": 157,
    "comments": 5,
    "shares": 2,
-   "watch_min": 2334,
+   "watch_min": 2333,
    "avg_view_sec": 37,
    "avg_view_pct": 74.1,
    "subs_gained": 2,
-   "forecast_7d": 6331,
-   "forecast_30d": 7423,
+   "forecast_7d": 6280,
+   "forecast_30d": 7362,
    "confidence": "высокая",
-   "age_h": 145.5,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 152.0,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
      0.01,
-     1.522
+     1.523
     ],
     [
      0.06,
@@ -3471,7 +3551,7 @@
     ],
     [
      0.26,
-     0.916
+     0.917
     ],
     [
      0.31,
@@ -3556,12 +3636,12 @@
    "forecast_7d": 15,
    "forecast_30d": 17,
    "confidence": "высокая",
-   "age_h": 127.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 133.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -3660,7 +3740,7 @@
    "duration_s": 45,
    "publish_date": "2026-11-03",
    "status": "public",
-   "views": 1965,
+   "views": 1964,
    "likes": 35,
    "comments": 2,
    "shares": 0,
@@ -3668,20 +3748,20 @@
    "avg_view_sec": 38,
    "avg_view_pct": 85.1,
    "subs_gained": 2,
-   "forecast_7d": 2107,
-   "forecast_30d": 2470,
+   "forecast_7d": 2082,
+   "forecast_30d": 2440,
    "confidence": "высокая",
-   "age_h": 122.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 128.7,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
      0.01,
-     1.412
+     1.413
     ],
     [
      0.06,
@@ -3761,7 +3841,7 @@
     ],
     [
      1,
-     0.427
+     0.428
     ]
    ]
   },
@@ -3775,7 +3855,7 @@
    "duration_s": 42,
    "publish_date": "2026-11-04",
    "status": "public",
-   "views": 2815,
+   "views": 2812,
    "likes": 35,
    "comments": 0,
    "shares": 1,
@@ -3783,15 +3863,15 @@
    "avg_view_sec": 31,
    "avg_view_pct": 75.1,
    "subs_gained": 3,
-   "forecast_7d": 3132,
-   "forecast_30d": 3672,
+   "forecast_7d": 3087,
+   "forecast_30d": 3618,
    "confidence": "высокая",
-   "age_h": 103.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 109.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
@@ -3808,11 +3888,11 @@
     ],
     [
      0.16,
-     1.046
+     1.045
     ],
     [
      0.21,
-     0.955
+     0.954
     ],
     [
      0.26,
@@ -3890,48 +3970,48 @@
    "duration_s": 46,
    "publish_date": "2026-11-04",
    "status": "public",
-   "views": 5716,
+   "views": 5758,
    "likes": 102,
    "comments": 0,
    "shares": 0,
-   "watch_min": 2183,
+   "watch_min": 2182,
    "avg_view_sec": 38,
    "avg_view_pct": 84.1,
    "subs_gained": 4,
-   "forecast_7d": 6429,
-   "forecast_30d": 7538,
+   "forecast_7d": 6385,
+   "forecast_30d": 7485,
    "confidence": "высокая",
-   "age_h": 98.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 104.6,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
      0.01,
-     1.534
+     1.535
     ],
     [
      0.06,
-     1.277
+     1.278
     ],
     [
      0.11,
-     1.182
+     1.183
     ],
     [
      0.16,
-     1.089
+     1.09
     ],
     [
      0.21,
-     1.022
+     1.023
     ],
     [
      0.26,
-     0.985
+     0.986
     ],
     [
      0.31,
@@ -3943,19 +4023,19 @@
     ],
     [
      0.41,
-     0.841
+     0.842
     ],
     [
      0.46,
-     0.824
+     0.825
     ],
     [
      0.51,
-     0.8
+     0.801
     ],
     [
      0.56,
-     0.791
+     0.792
     ],
     [
      0.61,
@@ -3967,23 +4047,23 @@
     ],
     [
      0.71,
-     0.767
+     0.768
     ],
     [
      0.76,
-     0.687
+     0.688
     ],
     [
      0.81,
-     0.645
+     0.646
     ],
     [
      0.86,
-     0.631
+     0.632
     ],
     [
      0.91,
-     0.62
+     0.621
     ],
     [
      0.96,
@@ -4005,7 +4085,7 @@
    "duration_s": 44,
    "publish_date": "2026-11-05",
    "status": "public",
-   "views": 1292,
+   "views": 1295,
    "likes": 28,
    "comments": 0,
    "shares": 0,
@@ -4013,28 +4093,28 @@
    "avg_view_sec": 30,
    "avg_view_pct": 70.1,
    "subs_gained": 1,
-   "forecast_7d": 1523,
-   "forecast_30d": 1786,
+   "forecast_7d": 1500,
+   "forecast_30d": 1759,
    "confidence": "высокая",
-   "age_h": 79.2,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": 85.7,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": [
     [
      0.01,
-     1.393
+     1.394
     ],
     [
      0.06,
-     1.281
+     1.283
     ],
     [
      0.11,
-     1.096
+     1.097
     ],
     [
      0.16,
@@ -4086,41 +4166,71 @@
     ],
     [
      0.76,
-     0.543
+     0.545
     ],
     [
      0.81,
-     0.523
+     0.525
     ],
     [
      0.86,
-     0.504
+     0.506
     ],
     [
      0.91,
-     0.487
+     0.488
     ],
     [
      0.96,
-     0.456
+     0.458
     ],
     [
      1,
-     0.381
+     0.383
     ]
    ]
   },
   {
-   "film": "—",
-   "topic": "The 7 WORST Jobs in Victorian London (Yo",
+   "film": "video33",
+   "topic": "Victorian jobs (лонг)",
+   "hook": "лонг 16:9",
+   "title": "The 7 WORST Jobs in Victorian London (You'd Quit by Noon)",
+   "thumb": "https://i9.ytimg.com/vi/UCCANXgJX1s/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLABAAb2-bCaXkx8sAANkbaVGjwkiQ",
+   "youtube": "https://youtu.be/UCCANXgJX1s",
+   "duration_s": 721,
+   "publish_date": "2026-11-09",
+   "status": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -11.3,
+   "updated": "2026-11-09T04:39:10Z",
+   "source": "api",
+   "subscribers": 57,
+   "subscribers_30d": 96,
+   "growth_note": "по 1093 замерам",
+   "warning": null,
+   "retention": null
+  },
+  {
+   "film": "video33 (дубль)",
+   "topic": "Victorian jobs",
    "hook": "—",
    "title": "The 7 WORST Jobs in Victorian London (You'd Quit by Noon)",
-   "thumb": "https://i9.ytimg.com/vi/hb7_4mzKchY/mqdefault.jpg?sqp=CIzkw9cG&rs=AOn4CLBYRPiyezAa1UtTCkw46__vK11MZg",
+   "thumb": "https://i9.ytimg.com/vi/hb7_4mzKchY/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLAPfEwBOn0yrtTsVzrr-_6H7ldhKw",
    "youtube": "https://youtu.be/hb7_4mzKchY",
    "duration_s": 721,
    "publish_date": "2026-11-09",
    "status": "private",
-   "views": 1,
+   "views": 3,
    "likes": 0,
    "comments": 0,
    "shares": null,
@@ -4131,26 +4241,56 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -17.8,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": -11.3,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": null
   },
   {
-   "film": "—",
-   "topic": "POV: your job is hunting treasure in Lon",
+   "film": "video33 short 1",
+   "topic": "Victorian jobs — Short 1",
+   "hook": "POV",
+   "title": "POV: your job is hunting treasure in London's SEWERS 🐀",
+   "thumb": "https://i9.ytimg.com/vi/xOnlJ7WgQkQ/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLCdkMM_vqOkI4sKEeceQINvVYkNZw",
+   "youtube": "https://youtu.be/xOnlJ7WgQkQ",
+   "duration_s": 43,
+   "publish_date": "2026-11-09",
+   "status": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -14.3,
+   "updated": "2026-11-09T04:39:10Z",
+   "source": "api",
+   "subscribers": 57,
+   "subscribers_30d": 96,
+   "growth_note": "по 1093 замерам",
+   "warning": null,
+   "retention": null
+  },
+  {
+   "film": "video33 short 1 (дубль)",
+   "topic": "Victorian jobs",
    "hook": "—",
    "title": "POV: your job is hunting treasure in London's SEWERS 🐀",
-   "thumb": "https://i9.ytimg.com/vi/pvnqV1BN8u0/mqdefault.jpg?sqp=CIzkw9cG&rs=AOn4CLCIf7BCMZ3GuKv98-_NUvzl0Q4gNw",
+   "thumb": "https://i9.ytimg.com/vi/pvnqV1BN8u0/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLDzk7jC7yuBFOjju_KBluua2ZIG7g",
    "youtube": "https://youtu.be/pvnqV1BN8u0",
    "duration_s": 43,
    "publish_date": "2026-11-09",
    "status": "private",
-   "views": 4,
+   "views": 5,
    "likes": 0,
    "comments": 0,
    "shares": null,
@@ -4161,21 +4301,51 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -20.8,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": -14.3,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": null
   },
   {
-   "film": "—",
-   "topic": "POV: your job is making hats, and they m",
+   "film": "video33 short 2",
+   "topic": "Victorian jobs — Short 2",
+   "hook": "POV",
+   "title": "POV: your job is making hats, and they make you MAD 🎩",
+   "thumb": "https://i9.ytimg.com/vi/aKKSAwnW8q0/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLDGhqH8ofqtqHQzO5enJ8UGp42tuw",
+   "youtube": "https://youtu.be/aKKSAwnW8q0",
+   "duration_s": 45,
+   "publish_date": "2026-11-10",
+   "status": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -28.3,
+   "updated": "2026-11-09T04:39:10Z",
+   "source": "api",
+   "subscribers": 57,
+   "subscribers_30d": 96,
+   "growth_note": "по 1093 замерам",
+   "warning": null,
+   "retention": null
+  },
+  {
+   "film": "video33 short 2 (дубль)",
+   "topic": "Victorian jobs",
    "hook": "—",
    "title": "POV: your job is making hats, and they make you MAD 🎩",
-   "thumb": "https://i9.ytimg.com/vi/ecInb1SzUAg/mqdefault.jpg?sqp=CIzkw9cG&rs=AOn4CLCEKyn7r17qb2e8IB_JE3qVHhU6Lw",
+   "thumb": "https://i9.ytimg.com/vi/ecInb1SzUAg/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLC93Q4EkffZMlHKYIyQ40WAiiTg0g",
    "youtube": "https://youtu.be/ecInb1SzUAg",
    "duration_s": 45,
    "publish_date": "2026-11-10",
@@ -4191,21 +4361,51 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -34.8,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": -28.3,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": null
   },
   {
-   "film": "—",
-   "topic": "POV: your job is wading barefoot in THAM",
+   "film": "video33 short 3",
+   "topic": "Victorian jobs — Short 3",
+   "hook": "POV",
+   "title": "POV: your job is wading barefoot in THAMES mud 🦶",
+   "thumb": "https://i9.ytimg.com/vi/qPgVdp1HDHU/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLCBHO-4p5Ib9ICqjrnyEQ3tOWszdA",
+   "youtube": "https://youtu.be/qPgVdp1HDHU",
+   "duration_s": 46,
+   "publish_date": "2026-11-10",
+   "status": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -33.3,
+   "updated": "2026-11-09T04:39:10Z",
+   "source": "api",
+   "subscribers": 57,
+   "subscribers_30d": 96,
+   "growth_note": "по 1093 замерам",
+   "warning": null,
+   "retention": null
+  },
+  {
+   "film": "video33 short 3 (дубль)",
+   "topic": "Victorian jobs",
    "hook": "—",
    "title": "POV: your job is wading barefoot in THAMES mud 🦶",
-   "thumb": "https://i9.ytimg.com/vi/pDGcPBcHgMc/mqdefault.jpg?sqp=CIzkw9cG&rs=AOn4CLDezuyEE8xMeAOqpikTP49K4sCq5A",
+   "thumb": "https://i9.ytimg.com/vi/pDGcPBcHgMc/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLD2FFHPzLzcoPzZ9_bCj_2A_7ttSg",
    "youtube": "https://youtu.be/pDGcPBcHgMc",
    "duration_s": 46,
    "publish_date": "2026-11-10",
@@ -4221,21 +4421,51 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -39.8,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": -33.3,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": null
   },
   {
-   "film": "—",
-   "topic": "POV: your job is sweeping a road between",
+   "film": "video33 short 4",
+   "topic": "Victorian jobs — Short 4",
+   "hook": "POV",
+   "title": "POV: your job is sweeping a road between HORSES 🐎",
+   "thumb": "https://i9.ytimg.com/vi/e1WGrNLvJpc/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLDfSNavvSIVsYcBs3_7uIHoVw5EOA",
+   "youtube": "https://youtu.be/e1WGrNLvJpc",
+   "duration_s": 49,
+   "publish_date": "2026-11-10",
+   "status": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -38.3,
+   "updated": "2026-11-09T04:39:10Z",
+   "source": "api",
+   "subscribers": 57,
+   "subscribers_30d": 96,
+   "growth_note": "по 1093 замерам",
+   "warning": null,
+   "retention": null
+  },
+  {
+   "film": "video33 short 4 (дубль)",
+   "topic": "Victorian jobs",
    "hook": "—",
    "title": "POV: your job is sweeping a road between HORSES 🐎",
-   "thumb": "https://i9.ytimg.com/vi/7Kg9uEq4DJY/mqdefault.jpg?sqp=CIzkw9cG&rs=AOn4CLBqbDBCdyKRNBI5H1Sny6y1Z0oFRw",
+   "thumb": "https://i9.ytimg.com/vi/7Kg9uEq4DJY/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLA-beHeFiJnNOaGnheYhhTGsLNJCA",
    "youtube": "https://youtu.be/7Kg9uEq4DJY",
    "duration_s": 49,
    "publish_date": "2026-11-10",
@@ -4251,21 +4481,51 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -44.8,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": -38.3,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": null
   },
   {
-   "film": "—",
-   "topic": "POV: your job is collecting BONES from t",
+   "film": "video33 short 5",
+   "topic": "Victorian jobs — Short 5",
+   "hook": "POV",
+   "title": "POV: your job is collecting BONES from the gutter 🦴",
+   "thumb": "https://i9.ytimg.com/vi/Wb2FQU7WD5c/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLAc_oei1U5btXq7oIaROGGm7Uo4bg",
+   "youtube": "https://youtu.be/Wb2FQU7WD5c",
+   "duration_s": 48,
+   "publish_date": "2026-11-11",
+   "status": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -52.3,
+   "updated": "2026-11-09T04:39:10Z",
+   "source": "api",
+   "subscribers": 57,
+   "subscribers_30d": 96,
+   "growth_note": "по 1093 замерам",
+   "warning": null,
+   "retention": null
+  },
+  {
+   "film": "video33 short 5 (дубль)",
+   "topic": "Victorian jobs",
    "hook": "—",
    "title": "POV: your job is collecting BONES from the gutter 🦴",
-   "thumb": "https://i9.ytimg.com/vi/K-sBEW4x4HY/mqdefault.jpg?sqp=CIzkw9cG&rs=AOn4CLDo_SuZBxngHHAHbXEZE331YyJF2Q",
+   "thumb": "https://i9.ytimg.com/vi/K-sBEW4x4HY/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLDoNzyD2UwdqEz1gHkuk2vQ8nkoNQ",
    "youtube": "https://youtu.be/K-sBEW4x4HY",
    "duration_s": 48,
    "publish_date": "2026-11-11",
@@ -4281,21 +4541,51 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -58.8,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": -52.3,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": null
   },
   {
-   "film": "—",
-   "topic": "POV: you're digging the world's first SU",
+   "film": "video33 short 6",
+   "topic": "Victorian jobs — Short 6",
+   "hook": "POV",
+   "title": "POV: you're digging the world's first SUBWAY 🚂",
+   "thumb": "https://i9.ytimg.com/vi/bP8BQgD0tGI/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLD7goQqIZ_WBjI4TNdzS35rLaUJ5g",
+   "youtube": "https://youtu.be/bP8BQgD0tGI",
+   "duration_s": 49,
+   "publish_date": "2026-11-11",
+   "status": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -57.3,
+   "updated": "2026-11-09T04:39:10Z",
+   "source": "api",
+   "subscribers": 57,
+   "subscribers_30d": 96,
+   "growth_note": "по 1093 замерам",
+   "warning": null,
+   "retention": null
+  },
+  {
+   "film": "video33 short 6 (дубль)",
+   "topic": "Victorian jobs",
    "hook": "—",
    "title": "POV: you're digging the world's first SUBWAY 🚂",
-   "thumb": "https://i9.ytimg.com/vi/kYU8ABFfd1w/mqdefault.jpg?sqp=CIzkw9cG&rs=AOn4CLB4VpOyKA6sHYDXAyPA-6I0w6vyLg",
+   "thumb": "https://i9.ytimg.com/vi/kYU8ABFfd1w/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLC1p1neML65c1GuYyRG8HCnqwnHaQ",
    "youtube": "https://youtu.be/kYU8ABFfd1w",
    "duration_s": 49,
    "publish_date": "2026-11-11",
@@ -4311,21 +4601,51 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -63.8,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": -57.3,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": null
   },
   {
-   "film": "—",
-   "topic": "POV: your job is making matches, and you",
+   "film": "video33 short 7",
+   "topic": "Victorian jobs — Short 7",
+   "hook": "POV",
+   "title": "POV: your job is making matches, and your jaw GLOWS 🔥",
+   "thumb": "https://i9.ytimg.com/vi/GjonqQ1GIaw/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLC8S9x07_-30MphPV0JI-6vIRIW_A",
+   "youtube": "https://youtu.be/GjonqQ1GIaw",
+   "duration_s": 48,
+   "publish_date": "2026-11-11",
+   "status": "private",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": null,
+   "watch_min": null,
+   "avg_view_sec": null,
+   "avg_view_pct": null,
+   "subs_gained": null,
+   "forecast_7d": null,
+   "forecast_30d": null,
+   "confidence": "—",
+   "age_h": -62.3,
+   "updated": "2026-11-09T04:39:10Z",
+   "source": "api",
+   "subscribers": 57,
+   "subscribers_30d": 96,
+   "growth_note": "по 1093 замерам",
+   "warning": null,
+   "retention": null
+  },
+  {
+   "film": "video33 short 7 (дубль)",
+   "topic": "Victorian jobs",
    "hook": "—",
    "title": "POV: your job is making matches, and your jaw GLOWS 🔥",
-   "thumb": "https://i9.ytimg.com/vi/SbtPzir463g/mqdefault.jpg?sqp=CIzkw9cG&rs=AOn4CLAHmczJEekdEBCrJSo3uDmrjv2ygg",
+   "thumb": "https://i9.ytimg.com/vi/SbtPzir463g/mqdefault.jpg?sqp=CPSaxdcG&rs=AOn4CLBw0chzYwdzBkMN83Eq18wP4FCznw",
    "youtube": "https://youtu.be/SbtPzir463g",
    "duration_s": 48,
    "publish_date": "2026-11-11",
@@ -4341,12 +4661,12 @@
    "forecast_7d": null,
    "forecast_30d": null,
    "confidence": "—",
-   "age_h": -68.8,
-   "updated": "2026-11-08T22:09:40Z",
+   "age_h": -62.3,
+   "updated": "2026-11-09T04:39:10Z",
    "source": "api",
    "subscribers": 57,
    "subscribers_30d": 96,
-   "growth_note": "по 1087 замерам",
+   "growth_note": "по 1093 замерам",
    "warning": null,
    "retention": null
   }
@@ -4540,19 +4860,19 @@
  "traffic": [
   [
    "SHORTS",
-   59265
+   59274
   ],
   [
    "YT_SEARCH",
-   2151
+   2153
   ],
   [
    "YT_OTHER_PAGE",
-   1055
+   1050
   ],
   [
    "YT_CHANNEL",
-   300
+   301
   ],
   [
    "SUBSCRIBER",
@@ -4636,19 +4956,19 @@
  "devices": [
   [
    "MOBILE",
-   47415
+   47422
   ],
   [
    "TABLET",
-   7288
+   7289
   ],
   [
    "DESKTOP",
-   4080
+   4081
   ],
   [
    "TV",
-   4029
+   4027
   ]
  ],
  "audience": [
