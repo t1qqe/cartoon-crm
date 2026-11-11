@@ -48,6 +48,9 @@
   .head-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
   .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
   .seg button { background: none; border: 0; padding: 4px 10px; font: inherit; font-size: 13px; color: var(--muted); cursor: pointer; }
+  .kind-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 0 0 16px; }
+  .kind-bar .seg button { font-size: 15px; padding: 7px 16px; }
+  .kind-bar .note { margin: 0; }
   .seg button[aria-pressed="true"] { background: var(--track); color: var(--fg); }
   .scroll { overflow: auto; max-height: 34rem; }
   table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: 14px; }
@@ -117,6 +120,10 @@
       <p class="lead" id="lead">Загрузка…</p>
     </div>
   </header>
+
+  <div class="kind-bar"><div class="seg" id="kind" role="group" aria-label="Какие ролики считать">
+    <button data-k="all" aria-pressed="true">Все ролики</button><button data-k="short" aria-pressed="false">Shorts</button><button data-k="long" aria-pressed="false">Лонги</button>
+  </div><span class="note" id="kind-note"></span></div>
 
   <section class="tiles" aria-label="Главное">
     <div class="tile"><div class="lbl">Подписчики</div><div class="big" id="k-subs">—</div><div class="sub" id="k-subs-sub">—</div></div>
@@ -559,13 +566,14 @@ function render(d) {
   const sum = (a, f) => a.reduce((x, r) => x + (f(r) || 0), 0);
 
   if (channel.title) { $('ch-title').textContent = channel.title; document.title = channel.title + ' — CRM'; }
-  if (channel.thumb) { $('avatar').onerror = () => $('avatar').remove(); $('avatar').src = channel.thumb; } else $('avatar').remove();
+  const av = $('avatar');
+  if (av && channel.thumb) { av.onerror = () => av.remove(); if (av.src !== channel.thumb) av.src = channel.thumb; } else if (av) av.remove();
 
   // KPIs
   const last28 = DAILY.slice(-28), gained = sum(last28, (x) => x[3]), lost = sum(last28, (x) => x[4]);
   $('k-subs').textContent = num(channel.subscribers ?? s0.subscribers);
   $('k-subs-sub').textContent = (gained || lost ? '+' + gained + (lost ? ' / −' + lost : '') + (DAILY.length ? ' с ' + day(last28[0][0]) : '') : '') + (s0.subscribers_30d != null ? ' · через 30 дн. ≈ ' + num(s0.subscribers_30d) : '');
-  const totalViews = channel.views ?? sum(pub, (r) => r.views);
+  const totalViews = KIND === 'all' ? channel.views ?? sum(pub, (r) => r.views) : sum(pub, (r) => r.views);   // a kind: its videos only
   $('k-views').textContent = short(totalViews);
   $('k-views-sub').textContent = pub.length + ' роликов вышло · в среднем ' + num(Math.round(sum(pub, (r) => r.views) / Math.max(1, pub.length))) + ' на ролик';
   const watch = sum(pub, (r) => r.watch_min);
@@ -694,7 +702,23 @@ document.querySelectorAll('#tbl th[data-sort]').forEach((th) => th.addEventListe
 document.querySelectorAll('#g-preset button').forEach((b) => b.addEventListener('click', () => { growth = +b.dataset.g; $('g-range').value = growth; drawMoney(); }));
 $('g-range').addEventListener('input', (e) => { growth = +e.target.value; drawMoney(); });
 
-fetch('data.json?' + Date.now()).then((r) => r.json()).then(render).catch((e) => { $('lead').textContent = 'Не удалось загрузить данные: ' + e.message; });
+// Shorts / longs: the per-video stats and forecasts of the chosen kind (a long = over 3 minutes); the channel-wide
+// blocks (views by day, traffic, countries, money) stay the whole channel's
+let RAW = null, KIND = 'all';
+const isLong = (r) => (r.duration_s || 0) > 180;
+function show() {
+  const stats = RAW.stats.filter((r) => KIND === 'all' || (KIND === 'long') === isLong(r));
+  render(Object.assign({}, RAW, { stats }));
+  $('kind-note').textContent = KIND === 'all' ? '' : (KIND === 'long' ? 'Только лонги' : 'Только Shorts') + ': плитки, ролики, досмотр, прогнозы и таблица. Графики по дням, трафик и монетизация — по всему каналу.';
+}
+document.querySelectorAll('#kind button').forEach((btn) => btn.addEventListener('click', () => {
+  KIND = btn.dataset.k; document.querySelectorAll('#kind button').forEach((x) => x.setAttribute('aria-pressed', x === btn));
+  try { localStorage.setItem('crm-kind', KIND); } catch (e) {}
+  if (RAW) show();
+}));
+try { const k = localStorage.getItem('crm-kind'); if (k) { KIND = k; document.querySelectorAll('#kind button').forEach((x) => x.setAttribute('aria-pressed', x.dataset.k === k)); } } catch (e) {}
+
+fetch('data.json?' + Date.now()).then((r) => r.json()).then((d) => { RAW = d; show(); }).catch((e) => { $('lead').textContent = 'Не удалось загрузить данные: ' + e.message; });
 </script>
 </body>
 </html>
