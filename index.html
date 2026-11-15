@@ -90,6 +90,14 @@
   .chart { position: relative; }
   .chart svg { display: block; width: 100%; }
   .chart text { fill: var(--muted); font-size: 11px; font-family: system-ui, sans-serif; }
+  .chart.zoomable { overflow: visible; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; }
+  .chart.zoomable.dragging { cursor: grabbing; }
+  .chart.zoomable svg { min-width: 0; }
+  .guide { position: absolute; top: 10px; bottom: 26px; width: 1px; background: var(--fg); opacity: .3; pointer-events: none; display: none; }
+  .zoom-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 0 0 8px; }
+  .zoom-bar .seg button { min-width: 2.2em; }
+  .zoom-bar .note { margin: 0; }
+  .zoom-bar[hidden] { display: none; }
   .tip { position: absolute; pointer-events: none; background: var(--fg); color: var(--bg); font-size: 12px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; transform: translate(-50%, -110%); display: none; }
   .meter { height: 14px; background: var(--track); border-radius: 7px; overflow: hidden; margin: 8px 0; }
   .meter > div { height: 100%; background: var(--accent); border-radius: 7px; }
@@ -196,7 +204,9 @@
       <div class="tile"><div class="lbl">Доход с лонгов через 12 месяцев (в месяц)</div><div class="big" id="ml-12">—</div><div class="sub" id="ml-12-sub">—</div></div>
     </div>
     <div class="legend" style="margin-top:16px"><span><i style="background:var(--muted);opacity:.35"></i>просмотры лонгов за месяц</span><span><i style="background:var(--c2)"></i>часы за последние 12 месяцев (пунктир — 4 000)</span><span><i style="background:var(--good)"></i>доход, $ в месяц (средняя оценка)</span></div>
-    <div class="chart" id="money-long-chart"></div>
+    <div class="zoom-bar" id="ml-zoom" hidden><div class="seg"><button data-s="12" aria-pressed="false">1 год</button><button data-s="24" aria-pressed="true">2 года</button><button data-s="48" aria-pressed="false">4 года</button></div><div class="seg"><button data-z="0.6" aria-label="Приблизить">+</button><button data-z="1.6" aria-label="Отдалить">−</button></div><span class="note" id="ml-range"></span></div>
+    <div class="chart zoomable" id="money-long-chart"></div>
+    <p class="note" style="margin-top:6px">Колесо мыши или два пальца — масштаб, перетаскивание — сдвиг по месяцам, двойной клик — снова 2 года. Шкалы подстраиваются под видимые месяцы.</p>
     <ul class="insights" id="money-long-notes" style="margin-top:12px"></ul>
   </section>
 
@@ -607,11 +617,115 @@ function simulateLong(L) {
   }
   return out;
 }
+// chart: monthly long views (bars), the 12-month hours (blue line, 4 000 h dashed), revenue (green line) — zoomable:
+// it shows the months [mlA, mlB) of the model's 48 (fractional while zooming), and the axes fit the months in view
+let ML = null, mlA = 0, mlB = 24;
+const ML_MIN = 3, ML_H = 240, ML_L = 52, ML_R = 60, ML_T = 10, ML_B = 26;
+const niceUp = (x) => { const p = Math.pow(10, Math.floor(Math.log10(x))), f = x / p; return p * (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10); };   // the round step ≥ x
+const hrs = (h) => (h < 10 && h % 1 ? h.toFixed(1).replace('.', ',') : num(Math.round(h))) + ' ч';
+function mlSet(a, s) {   // the window: from month a, s months wide; false when nothing changed
+  const n = ML ? ML.months.length : 48;
+  s = Math.min(n, Math.max(ML_MIN, s)); a = Math.min(n - s, Math.max(0, a));
+  if (Math.abs(a - mlA) < 1e-6 && Math.abs(a + s - mlB) < 1e-6) return false;
+  mlA = a; mlB = a + s; drawLongChart(); return true;
+}
+function drawLongChart() {
+  const box = $('money-long-chart');
+  if (!box.dataset.ready) initLongChart(box);
+  box.querySelector('svg')?.remove();
+  $('ml-zoom').hidden = !ML;
+  if (!ML) return;
+  const W = Math.max(300, box.clientWidth), H = ML_H, Lp = ML_L, R = ML_R, T = ML_T, B = ML_B, span = mlB - mlA, bw = (W - Lp - R) / span;
+  const X = (i) => Lp + (i - mlA) * bw, Y = (f) => T + (H - T - B) * (1 - f);
+  const vis = ML.months.map((m, i) => [m, i]).filter(([, i]) => i + 1 > mlA && i < mlB);
+  // round steps on both axes over the same grid lines
+  const vTop = Math.max(1, ...vis.map(([m]) => m.views)), hTop = Math.max(1, ...vis.map(([m]) => m.h12));
+  const vStep = niceUp(vTop / 4), ticks = Math.ceil(vTop / vStep), hStep = niceUp(hTop / ticks), vmax = vStep * ticks, hmax = hStep * ticks;
+  const rmax = Math.max(1e-9, ...vis.map(([m]) => m.rev[1])) * 1.05;
+  const svg = sv('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Прогноз просмотров, часов и дохода лонгов по месяцам' });
+  for (let k = 0; k <= ticks; k++) {
+    svg.appendChild(sv('line', { x1: Lp, x2: W - R, y1: Y(k / ticks), y2: Y(k / ticks), stroke: 'var(--line)' }));
+    const a = sv('text', { x: Lp - 6, y: Y(k / ticks) + 4, 'text-anchor': 'end' }); a.textContent = short(vStep * k); svg.appendChild(a);
+    const b2 = sv('text', { x: W - R + 6, y: Y(k / ticks) + 4 }); b2.textContent = hrs(hStep * k); svg.appendChild(b2);
+  }
+  const id = 'ml-clip', clip = sv('clipPath', { id }); clip.appendChild(sv('rect', { x: Lp, y: 0, width: W - Lp - R, height: H })); svg.appendChild(clip);
+  const plot = sv('g', { 'clip-path': `url(#${id})` }); svg.appendChild(plot);
+  if (4000 <= hmax) plot.appendChild(sv('line', { x1: Lp, x2: W - R, y1: Y(4000 / hmax), y2: Y(4000 / hmax), stroke: 'var(--c2)', 'stroke-dasharray': '6 5', opacity: 0.8 }));
+  else { const t = sv('text', { x: W - R - 6, y: T + 14, 'text-anchor': 'end', style: 'fill: var(--c2)' }); t.textContent = '↑ 4 000 ч'; svg.appendChild(t); }
+  vis.forEach(([m, i]) => {
+    const h = (H - T - B) * m.views / vmax;
+    plot.appendChild(sv('rect', { x: X(i) + bw * 0.15, y: H - B - h, width: bw * 0.7, height: Math.max(1, h), rx: Math.min(2, bw * 0.2), fill: m.monetized ? 'var(--good)' : 'var(--muted)', opacity: 0.3 }));
+  });
+  const every = Math.max(1, Math.ceil(span / Math.max(2, Math.floor((W - Lp - R) / 64))));
+  vis.forEach(([m, i]) => {
+    const cx = X(i) + bw / 2;
+    if (i % every || cx < Lp || cx > W - R) return;
+    const t = sv('text', { x: cx, y: H - 8, 'text-anchor': 'middle' }); t.textContent = new Date(m.end + 'T00:00:00Z').toLocaleDateString('ru-RU', { month: 'short', year: '2-digit', timeZone: 'UTC' }).replace(' г.', ''); svg.appendChild(t);
+  });
+  plot.appendChild(sv('polyline', { points: vis.map(([m, i]) => (X(i) + bw / 2) + ',' + Y(m.h12 / hmax)).join(' '), fill: 'none', stroke: 'var(--c2)', 'stroke-width': 2.5, 'stroke-linejoin': 'round' }));
+  if (vis.some(([m]) => m.monetized)) plot.appendChild(sv('polyline', { points: vis.map(([m, i]) => (X(i) + bw / 2) + ',' + Y(m.rev[1] / rmax)).join(' '), fill: 'none', stroke: 'var(--good)', 'stroke-width': 2.5, 'stroke-linejoin': 'round' }));
+  box.prepend(svg);
+  ML.geo = { W, Lp, R, bw };
+  const first = ML.months[Math.min(ML.months.length - 1, Math.floor(mlA))], last = ML.months[Math.max(0, Math.ceil(mlB) - 1)];
+  $('ml-range').textContent = ML.when(first.end) + ' — ' + ML.when(last.end);
+  document.querySelectorAll('#ml-zoom [data-s]').forEach((b) => b.setAttribute('aria-pressed', String(mlA < 1e-6 && Math.abs(span - +b.dataset.s) < 1e-6)));
+}
+function initLongChart(box) {
+  box.dataset.ready = '1';
+  const tip = el('div', null, 'tip'), guide = el('div', null, 'guide'); box.append(tip, guide);
+  const at = (clientX) => {   // a pointer's place: the fraction of the plot's width (0..1) and the month under it
+    const g = ML.geo, rect = box.getBoundingClientRect(), x = clientX - rect.left;
+    return { f: (x - g.Lp) / (g.W - g.Lp - g.R), i: Math.floor(mlA + (x - g.Lp) / g.bw), x };
+  };
+  const show = (clientX) => {
+    const p = at(clientX), m = ML.months[p.i];
+    if (!m || p.f < 0 || p.f > 1) { tip.style.display = guide.style.display = 'none'; return; }
+    tip.textContent = ML.when(m.end) + ': ' + short(Math.round(m.views)) + ' просм. · ' + hrs(m.h12) + ' за 12 мес. · ' + num(Math.round(m.subs)) + ' подп.' + (m.monetized ? ' · ' + usd(m.rev[0]) + '–' + usd(m.rev[2]) : '');
+    tip.style.display = 'block'; tip.style.top = '0';
+    const half = tip.offsetWidth / 2; tip.style.left = Math.min(ML.geo.W - half, Math.max(half, p.x)) + 'px';
+    guide.style.display = 'block'; guide.style.left = (ML.geo.Lp + (p.i - mlA + 0.5) * ML.geo.bw) + 'px';
+  };
+  const hide = () => { tip.style.display = guide.style.display = 'none'; };
+  // the mouse wheel and a trackpad's pinch zoom around the pointer, a sideways swipe pans; the page scrolls on when the
+  // window can't change any more
+  box.addEventListener('wheel', (e) => {
+    if (!ML) return;
+    const p = at(e.clientX), s = mlB - mlA;
+    const changed = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? mlSet(mlA + e.deltaX / ML.geo.bw, s)
+      : (() => { const s2 = s * Math.exp(e.deltaY * (e.ctrlKey ? 0.01 : 0.002)), f = Math.min(1, Math.max(0, p.f)); return mlSet(mlA + (s - s2) * f, s2); })();
+    if (changed) { e.preventDefault(); show(e.clientX); }
+  }, { passive: false });
+  // drag to pan; two fingers pinch to zoom
+  const pts = new Map(); let g0 = null;
+  const base = () => { const xs = [...pts.values()]; g0 = { a: mlA, s: mlB - mlA, xs, mid: xs.reduce((a, x) => a + x, 0) / xs.length }; };
+  box.addEventListener('pointerdown', (e) => {
+    if (!ML || e.button > 0 || e.target.closest('button')) return;
+    box.setPointerCapture(e.pointerId); pts.set(e.pointerId, e.clientX); base(); box.classList.add('dragging');
+    if (pts.size === 1) show(e.clientX); else hide();
+  });
+  box.addEventListener('pointermove', (e) => {
+    if (!ML) return;
+    if (!pts.has(e.pointerId)) { if (!pts.size) show(e.clientX); return; }
+    pts.set(e.pointerId, e.clientX);
+    const xs = [...pts.values()], pw = ML.geo.W - ML.geo.Lp - ML.geo.R;
+    if (xs.length === 1) { mlSet(g0.a - (xs[0] - g0.xs[0]) / pw * g0.s, g0.s); show(e.clientX); return; }
+    const d0 = Math.max(10, Math.abs(g0.xs[1] - g0.xs[0])), d = Math.max(10, Math.abs(xs[1] - xs[0])), mid = (xs[0] + xs[1]) / 2;
+    const s = g0.s * d0 / d, f = Math.min(1, Math.max(0, at(g0.mid).f));
+    mlSet(g0.a + (g0.s - s) * f - (mid - g0.mid) / pw * s, s);
+  });
+  const up = (e) => { if (!pts.delete(e.pointerId)) return; base(); if (!pts.size) box.classList.remove('dragging'); };
+  box.addEventListener('pointerup', up); box.addEventListener('pointercancel', up);
+  box.addEventListener('pointerleave', (e) => { if (e.pointerType === 'mouse' && !pts.size) hide(); });
+  box.addEventListener('dblclick', () => { mlSet(0, 24); hide(); });
+  document.querySelectorAll('#ml-zoom [data-s]').forEach((b) => b.addEventListener('click', () => { mlSet(0, +b.dataset.s); hide(); }));
+  document.querySelectorAll('#ml-zoom [data-z]').forEach((b) => b.addEventListener('click', () => { const s = mlB - mlA, s2 = s * +b.dataset.z; mlSet(mlA + (s - s2) / 2, s2); hide(); }));
+  if (window.ResizeObserver) { let w = box.clientWidth; new ResizeObserver(() => { if (box.clientWidth !== w) { w = box.clientWidth; drawLongChart(); } }).observe(box); }
+}
 function drawLongMoney() {
-  const box = $('money-long-chart'), notes = $('money-long-notes'); box.textContent = ''; notes.textContent = '';
+  const notes = $('money-long-notes'); notes.textContent = '';
   const longs = (RAW ? RAW.stats : []).filter((r) => isLong(r) && r.status === 'public' && r.views != null);
   const sum = (a, f) => a.reduce((x, r) => x + (f(r) || 0), 0);
-  if (!longs.length) { notes.appendChild(el('li', 'Появится, когда выйдет первый лонг.')); return; }
+  if (!longs.length) { ML = null; drawLongChart(); notes.appendChild(el('li', 'Появится, когда выйдет первый лонг.')); return; }
   const v30 = sum(longs, (r) => r.forecast_30d || r.views) / longs.length;
   // hours per view: from the average view duration (YouTube Analytics' own views lag the live count, so watch_min / views
   // would understate it); watch_min / views only when the duration isn't there yet
@@ -637,29 +751,8 @@ function drawLongMoney() {
   const m12 = r.months[11];
   $('ml-12').textContent = m12 && m12.monetized ? usd(m12.rev[0]) + '–' + usd(m12.rev[2]) : '$0';
   $('ml-12-sub').textContent = m12 ? short(Math.round(m12.views)) + ' просмотров лонгов в месяц' + (m12.monetized ? '' : ' · монетизации ещё нет') : '';
-  // chart: monthly long views (bars), the 12-month hours (blue line, 4 000 h dashed), revenue (green line)
-  const months = r.months.slice(0, 24), W = 1000, H = 220, Lp = 52, R = 60, T = 10, B = 26;
-  const vmax = Math.max(1, ...months.map((m) => m.views)), hmax = Math.max(4400, ...months.map((m) => m.h12)), rmax = Math.max(1, ...months.map((m) => m.rev[1]));
-  const bw = (W - Lp - R) / months.length, Y = (f) => T + (H - T - B) * (1 - f);
-  const svg = sv('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Прогноз просмотров, часов и дохода лонгов по месяцам' });
-  [0, .5, 1].forEach((k) => {
-    svg.appendChild(sv('line', { x1: Lp, x2: W - R, y1: Y(k), y2: Y(k), stroke: 'var(--line)' }));
-    const a = sv('text', { x: Lp - 6, y: Y(k) + 4, 'text-anchor': 'end' }); a.textContent = short(Math.round(vmax * k)); svg.appendChild(a);
-    const b2 = sv('text', { x: W - R + 6, y: Y(k) + 4 }); b2.textContent = num(Math.round(hmax * k)) + ' ч'; svg.appendChild(b2);
-  });
-  svg.appendChild(sv('line', { x1: Lp, x2: W - R, y1: Y(4000 / hmax), y2: Y(4000 / hmax), stroke: 'var(--c2)', 'stroke-dasharray': '6 5', opacity: 0.8 }));
-  const tip = el('div', null, 'tip');
-  months.forEach((m, i) => {
-    const x = Lp + i * bw, h = (H - T - B) * m.views / vmax;
-    const rect = sv('rect', { x: x + bw * 0.15, y: H - B - h, width: bw * 0.7, height: Math.max(1, h), rx: 2, fill: m.monetized ? 'var(--good)' : 'var(--muted)', opacity: 0.3 });
-    rect.addEventListener('pointerenter', () => { tip.textContent = when(m.end) + ': ' + short(Math.round(m.views)) + ' просм. · ' + num(Math.round(m.h12)) + ' ч за 12 мес. · ' + num(Math.round(m.subs)) + ' подп.' + (m.monetized ? ' · ' + usd(m.rev[0]) + '–' + usd(m.rev[2]) : ''); tip.style.display = 'block'; tip.style.left = (100 * (x + bw / 2) / W) + '%'; tip.style.top = '0'; });
-    rect.addEventListener('pointerleave', () => { tip.style.display = 'none'; });
-    svg.appendChild(rect);
-    if (i % 3 === 0) { const t = sv('text', { x: x + bw / 2, y: H - 8, 'text-anchor': 'middle' }); t.textContent = new Date(m.end + 'T00:00:00Z').toLocaleDateString('ru-RU', { month: 'short', year: '2-digit', timeZone: 'UTC' }).replace(' г.', ''); svg.appendChild(t); }
-  });
-  svg.appendChild(sv('polyline', { points: months.map((m, i) => (Lp + i * bw + bw / 2) + ',' + Y(m.h12 / hmax)).join(' '), fill: 'none', stroke: 'var(--c2)', 'stroke-width': 2.5 }));
-  if (months.some((m) => m.monetized)) svg.appendChild(sv('polyline', { points: months.map((m, i) => (Lp + i * bw + bw / 2) + ',' + Y(m.rev[1] / rmax)).join(' '), fill: 'none', stroke: 'var(--good)', 'stroke-width': 2.5 }));
-  box.append(svg, tip);
+  ML = { months: r.months, when };
+  drawLongChart();
   const say = (t) => notes.appendChild(el('li', t));
   const one = (x) => (Math.round(x * 10) / 10).toLocaleString('ru-RU');
   say('Сейчас: лонгов вышло — ' + longs.length + ', ' + one(L.hoursNow) + ' ч просмотра из 4 000 нужных. Один лонг за первые 30 дней набирает ≈ ' + num(Math.round(v30)) + ' просмотров и ≈ ' + one(L.h30) + ' ч (средний просмотр ' + mmss(Math.round(hpv * 3600)) + ').');
